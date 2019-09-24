@@ -10,7 +10,6 @@ export class MainSearchInputComponent implements OnInit {
   @Input() isSearchResult;
   advanced = false;
   openDropFiles = false;
-  searchResult = false;
 
   constructor() {
   }

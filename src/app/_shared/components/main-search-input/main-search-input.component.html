@@ -1,40 +1,52 @@
-<div class="d-flex input-section">
-  <div class="d-flex">
-    <div class="flex-column">
-      <div class="d-flex search-input">
-        <input type="text" placeholder="Search here">
-        <button class="search-btn">
-          <img class="search-img" src="../../../../../assets/icons/search-button.svg" alt="search">
-        </button>
+<div [class.search-result]="isSearchResult">
+  <div
+    class="search-result-info"
+    *ngIf="isSearchResult"
+  >Showing Results for <span class="italic-bold-text">"Patrick or Pato"</span></div>
+  <div class="d-flex input-section">
+    <div class="d-flex">
+      <div *ngIf="isSearchResult" class="search-filters-button">
+        <img src="../../../../../assets/icons/search-filter-button.svg" alt="filters">
       </div>
-      <div
-        class="drag-files-section"
-        [class.active]="openDropFiles"
+      <div class="flex-column">
+        <div class="d-flex search-input">
+          <input type="text" placeholder="Search here">
+          <button class="search-btn">
+            <img class="search-img" src="../../../../../assets/icons/search-button.svg" alt="search">
+          </button>
+        </div>
+        <span *ngIf="isSearchResult" class="search-time-result">
+          495 Results (0.21 Seconds)
+        </span>
+        <div
+          class="drag-files-section"
+          [class.active]="openDropFiles"
 
-      >
-        <app-search-drag-files></app-search-drag-files>
+        >
+          <app-search-drag-files></app-search-drag-files>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="search-camera pointer"
+             (click)="openDropFiles = !openDropFiles"
+             (clickOutside)="onClickedOutside($event)"
+        >
+          <img [src]="'../../../../../assets/icons/'+ (openDropFiles ? 'search-camera-blue' : 'search-camera')+'.svg'"
+               alt="search-camera">
+        </div>
+        <div class="search-voice">
+          <img src="../../../../../assets/icons/search-voice.svg" alt="search-voice">
+        </div>
+        <span
+          class="advanced-title pointer"
+          (click)="openAdvanced.emit(advanced = !advanced)"
+          [ngClass]="{'changeColor': advanced}"
+        >Advanced</span>
       </div>
     </div>
-    <div class="actions">
-      <div class="search-camera pointer"
-           (click)="openDropFiles = !openDropFiles"
-           (clickOutside)="onClickedOutside($event)"
-      >
-        <img [src]="'../../../../../assets/icons/'+ (openDropFiles ? 'search-camera-blue' : 'search-camera')+'.svg'"
-             alt="search-camera">
-      </div>
-      <div class="search-voice">
-        <img src="../../../../../assets/icons/search-voice.svg" alt="search-voice">
-      </div>
-      <span
-        class="advanced-title pointer"
-        (click)="openAdvanced.emit(advanced = !advanced)"
-        [ngClass]="{'changeColor': advanced}"
-      >Advanced</span>
+    <div class="advanced pointer"
+         [ngClass]="{'advanced-visible': advanced}">
+      <app-search-advanced></app-search-advanced>
     </div>
-  </div>
-  <div class="advanced pointer"
-       [ngClass]="{'advanced-visible': advanced}">
-    <app-search-advanced></app-search-advanced>
   </div>
 </div>

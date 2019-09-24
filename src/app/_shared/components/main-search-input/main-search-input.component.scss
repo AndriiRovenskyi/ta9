@@ -32,6 +32,7 @@
 
 }
 
+
 .advanced {
   position: absolute;
   width: max-content;
@@ -44,6 +45,18 @@
   opacity: 0;
   z-index: -1;
   cursor: pointer;
+}
+
+.search-result {
+  .advanced {
+    margin: 0;
+    left: 50px;
+    transform: translateX(0);
+  }
+
+  .advanced-visible {
+    top: 45px;
+  }
 }
 
 .advanced-visible {
@@ -61,6 +74,7 @@
 .actions {
   display: flex;
   align-items: center;
+  height: 42px;
 
   .search-voice {
     margin: 0 16px;
@@ -83,6 +97,7 @@
     color: #3D97FF;
   }
 }
+
 .search-result-wrap {
   margin-left: 9px;
 }
