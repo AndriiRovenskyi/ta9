@@ -1,0 +1,28 @@
+<div
+  class="search-filter"
+  *ngFor="let filter of filters"
+>
+  <header class="filter-header">
+    <div class="d-flex" (click)="filter.opened = !filter.opened">
+      <img [class.rotate-down-arrow]="filter.opened" class="down-arrow"
+           src="../../../../../../assets/icons/filter-down-arrow.svg" alt="drop-down">
+      <span class="filter-title">{{filter.name}}</span>
+    </div>
+    <div class="filter-sorts">
+      <div class="d-flex">
+        <img class="sort-img" src="../../../../../../assets/icons/hi-lo.svg" alt="sort-hi-lo">
+        <img class="sort-img" src="../../../../../../assets/icons/a-z-off.svg" alt="sort-a-z">
+      </div>
+    </div>
+  </header>
+  <div class="filters-content" *ngIf="filter.opened">
+    <div class="d-flex flex-a-center checks-container" *ngFor="let type of filter.types">
+      <label>
+        <input type="checkbox">
+      </label>
+      <span class="filter-type">{{type}}</span>
+    </div>
+    <span class="see-all-filters">See All</span>
+  </div>
+</div>
+
