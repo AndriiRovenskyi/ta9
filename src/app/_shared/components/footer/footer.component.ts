@@ -14,9 +14,8 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
-  x() {
-    debugger;
-    this.showLegend = !this.showLegend;
+  onClickedOutside(event) {
+    this.showLegend = false;
   }
 
 }

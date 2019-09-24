@@ -18,4 +18,8 @@ export class MainSearchInputComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClickedOutside(event) {
+    this.openDropFiles = false;
+  }
+
 }

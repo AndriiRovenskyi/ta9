@@ -1,12 +1,15 @@
 <div class="advanced-container">
   <div
-    [ngClass]="{'active': c.opened}"
+    [ngClass]="{'active': category.opened}"
     class="select-wrapper"
-    (click)="c.opened = !c.opened"
-    *ngFor="let c of categories"
+    (click)="category.opened = !category.opened"
+    (clickOutside)="onClickedOutside(category)"
+    *ngFor="let category of categories"
   >
-    <img class="time-img" *ngIf="c.name === 'Creation Time'" src="../../../../../assets/icons/advanced-time.svg" alt="advanced-time">
-    {{c.name}}
+    <img class="time-img"
+         *ngIf="category.name === 'Creation Time'"
+         src="../../../../../assets/icons/advanced-time.svg" alt="advanced-time">
+    {{category.name}}
     <div class="categories">
       <div class="category">1</div>
       <div class="category">2</div>

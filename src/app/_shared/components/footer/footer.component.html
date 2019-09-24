@@ -5,14 +5,16 @@
         <img src="../../../../assets/icons/footer-arrow.svg" alt="tips">
         <span class="title">Tip!</span>
       </div>
-      <p class="description">You can use <span class="italic-bold-text">syntax symbols</span> to focus your search results:</p>
-      <div class="footer-legend" *ngIf="showLegend">
+      <p class="description">You can use <span class="italic-text">syntax symbols</span> to focus your search results:</p>
+      <div class="footer-legend"
+           [class.active]="showLegend">
         <app-footer-legend></app-footer-legend>
       </div>
       <div class="show-more"
               (click)="showLegend=!showLegend"
+              (clickOutside)="onClickedOutside($event)"
       >
-        <div>SHOW {{showLegend ? 'LESS' : 'MORE'}}</div>
+        <div class="pointer">SHOW {{showLegend ? 'LESS' : 'MORE'}}</div>
       </div>
     </div>
   </div>

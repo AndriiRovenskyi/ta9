@@ -48,4 +48,9 @@ export class SearchAdvancedComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClickedOutside(category) {
+    category.opened = false;
+  }
+
+
 }
