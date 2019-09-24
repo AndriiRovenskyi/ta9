@@ -44,3 +44,31 @@ body {
 
   }
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.active {
+  display: block !important;
+  animation: fadeIn .5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

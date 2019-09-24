@@ -9,29 +9,31 @@
       </div>
       <div
         class="drag-files-section"
-        *ngIf="openDropFiles"
+        [class.active]="openDropFiles"
 
       >
         <app-search-drag-files></app-search-drag-files>
       </div>
     </div>
     <div class="actions">
-      <div class="search-camera"
+      <div class="search-camera pointer"
            (click)="openDropFiles = !openDropFiles"
+           (clickOutside)="onClickedOutside($event)"
       >
-        <img src="../../../../../assets/icons/search-camera.svg" alt="search-camera">
+        <img [src]="'../../../../../assets/icons/'+ (openDropFiles ? 'search-camera-blue' : 'search-camera')+'.svg'"
+             alt="search-camera">
       </div>
       <div class="search-voice">
         <img src="../../../../../assets/icons/search-voice.svg" alt="search-voice">
       </div>
       <span
-        class="advanced-title"
+        class="advanced-title pointer"
         (click)="openAdvanced.emit(advanced = !advanced)"
         [ngClass]="{'changeColor': advanced}"
       >Advanced</span>
     </div>
   </div>
-  <div class="advanced"
+  <div class="advanced pointer"
        [ngClass]="{'advanced-visible': advanced}">
     <app-search-advanced></app-search-advanced>
   </div>
