@@ -5,7 +5,6 @@ import {RouterModule, Routes} from '@angular/router';
 import {SearchAdvancedComponent} from '../../_shared/components/main-search-input/search-advanced/search-advanced.component';
 import {SharedModule} from '../../_shared/shared.module';
 import { HistoryChipComponent } from './components/search/history-chip/history-chip.component';
-import { SearchDragFilesComponent } from '../../_shared/components/main-search-input/search-drag-files/search-drag-files.component';
 import {ClickOutsideModule} from 'ng-click-outside';
 
 
