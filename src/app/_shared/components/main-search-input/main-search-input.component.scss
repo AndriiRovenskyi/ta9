@@ -1,4 +1,4 @@
-advanced-title {
+.advanced-title {
   align-self: center;
   color: lightgray;
   display: block;
@@ -7,7 +7,6 @@ advanced-title {
 .input-section {
   position: relative;
 }
-
 
 
 .search-input {
@@ -82,4 +81,26 @@ advanced-title {
   .changeColor {
     color: #3D97FF;
   }
+}
+.search-result-wrap {
+  margin-left: 9px;
+}
+
+.search-filters-button {
+  margin: 0 19px;
+  cursor: pointer;
+  height: 42px;
+  display: flex;
+}
+
+.search-result-info {
+  font-size: 9px;
+  font-weight: 400;
+  margin: 7px 0;
+}
+
+.search-time-result {
+  font-size: 8px;
+  font-weight: 400;
+  margin: 7px 0;
 }

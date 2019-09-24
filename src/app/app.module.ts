@@ -5,8 +5,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
 
-
 import {SharedModule} from './_shared/shared.module';
+import {SearchResultModule} from './modules/search-result/search-result.module';
 
 
 @NgModule({
@@ -16,7 +16,8 @@ import {SharedModule} from './_shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    SearchResultModule
   ],
   providers: [],
   bootstrap: [AppComponent]

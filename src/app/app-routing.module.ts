@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: './modules/search/search.module#SearchModule'
+  },
+  {
+    path: 'results',
+    loadChildren: './modules/search-result/search-result.module#SearchResultModule'
   }
 ];
 

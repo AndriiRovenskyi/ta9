@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-main-search-input',
@@ -7,8 +7,10 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class MainSearchInputComponent implements OnInit {
   @Output('openAdvanced') openAdvanced: EventEmitter<any> = new EventEmitter();
+  @Input() isSearchResult;
   advanced = false;
   openDropFiles = false;
+  searchResult = false;
 
   constructor() {
   }
