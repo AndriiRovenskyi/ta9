@@ -1,8 +1,7 @@
 <div class="header-right d-flex">
   <div class="add-entity-tools">
     <img src="../../../../assets/icons/add-button.png" alt="add-button"
-         (click)="toolsDropDownToggle = !toolsDropDownToggle"
-         (clickOutside)="toolsDropDownToggle=false">
+         (click)="toolsDropDownToggle = !toolsDropDownToggle">
     <div class="add-entity-content" *ngIf="toolsDropDownToggle">
       <div class="add-entity-content-button">
         <img src="../../../../assets/icons/add-button-blue.png" alt="add-button-blue">
@@ -35,7 +34,6 @@
   <div
     class="log-in-section d-flex"
     (click)="logInDropDownToggle = !logInDropDownToggle"
-    (clickOutside)="logInDropDownToggle=false"
   >
     <img src="../../../../assets/icons/drop-down-arrow.png" alt="drop-arrow">
     <img src="../../../../assets/icons/person-pic.png" alt="person-pic">

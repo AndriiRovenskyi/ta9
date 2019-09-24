@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
-import {ClickOutsideModule} from 'ng-click-outside';
+
 
 import {SharedModule} from './_shared/shared.module';
 
@@ -16,7 +16,6 @@ import {SharedModule} from './_shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ClickOutsideModule,
     SharedModule
   ],
   providers: [],

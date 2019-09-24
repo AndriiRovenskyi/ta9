@@ -6,7 +6,6 @@ import {SearchAdvancedComponent} from './components/search/search-advanced/searc
 import {SharedModule} from '../../_shared/shared.module';
 import { HistoryChipComponent } from './components/search/history-chip/history-chip.component';
 import { SearchDragFilesComponent } from './components/search/search-drag-files/search-drag-files.component';
-import {ClickOutsideModule} from 'ng-click-outside';
 
 
 const SearchRoutes: Routes = [{
@@ -18,8 +17,7 @@ const SearchRoutes: Routes = [{
   imports: [
     CommonModule,
     RouterModule.forChild(SearchRoutes),
-    SharedModule,
-    ClickOutsideModule
+    SharedModule
   ]
 })
 export class SearchModule {
