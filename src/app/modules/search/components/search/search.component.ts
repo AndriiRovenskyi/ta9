@@ -6,13 +6,17 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  openAdvanced = false;
-  openDropFiles = false;
+  advanced = false;
 
   constructor() {
   }
 
   ngOnInit() {
   }
+
+  openAdvanced(open) {
+    this.advanced = open;
+  }
+
 
 }

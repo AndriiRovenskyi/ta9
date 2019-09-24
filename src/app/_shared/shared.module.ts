@@ -6,6 +6,9 @@ import {HeaderLeftComponent} from './components/header/header-left/header-left.c
 import {HeaderRightComponent} from './components/header/header-right/header-right.component';
 import {HeaderNavComponent} from './components/header/header-nav/header-nav.component';
 import {FooterLegendComponent} from './components/footer/footer-legend/footer-legend.component';
+import {MainSearchInputComponent} from './components/main-search-input/main-search-input.component';
+import {SearchAdvancedComponent} from './components/main-search-input/search-advanced/search-advanced.component';
+import {SearchDragFilesComponent} from './components/main-search-input/search-drag-files/search-drag-files.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import {FooterLegendComponent} from './components/footer/footer-legend/footer-le
     HeaderRightComponent,
     HeaderNavComponent,
     FooterComponent,
-    FooterLegendComponent],
+    FooterLegendComponent,
+    MainSearchInputComponent,
+    SearchAdvancedComponent,
+    SearchDragFilesComponent],
   imports: [
     CommonModule
   ],
@@ -23,7 +29,8 @@ import {FooterLegendComponent} from './components/footer/footer-legend/footer-le
     HeaderRightComponent,
     HeaderNavComponent,
     FooterComponent,
-    FooterLegendComponent]
+    FooterLegendComponent,
+    MainSearchInputComponent]
 })
 export class SharedModule {
 }
