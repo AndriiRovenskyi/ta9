@@ -1,0 +1,22 @@
+<div class="header-left d-flex">
+  <div class="menu-button"
+       (click)="activeMenu = !activeMenu"
+       (clickOutside)="activeMenu = false"
+  >
+    <img src="../../../../assets/icons/menu.png" alt="menu-button"
+    >
+  </div>
+  <div class="logo">
+    <img src="../../../../assets/icons/logo.png" alt="logo-TA9">
+  </div>
+  <div class="federated-search">
+    <img src="../../../../assets/icons/star.png" alt="federated-search">
+    <span>Federated Search</span>
+  </div>
+</div>
+<div
+  class="navigation"
+  [ngClass]="{'menu-pos': activeMenu}"
+>
+  <app-header-nav (openMenu)="activeMenu = !activeMenu"></app-header-nav>
+</div>

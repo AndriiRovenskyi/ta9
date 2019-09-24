@@ -1,0 +1,62 @@
+<div class="search flex-column">
+  <div class="container">
+    <div class="search-wrapper">
+      <div class="d-flex input-section">
+        <div class="d-flex">
+          <div class="flex-column">
+            <div class="d-flex search-input">
+              <input type="text" placeholder="Search here">
+              <button class="search-btn">
+                <img class="search-img" src="../../../../../assets/icons/search-button.svg" alt="search">
+              </button>
+            </div>
+            <div
+              class="drag-files-section"
+              *ngIf="openDropFiles"
+
+            >
+              <app-search-drag-files></app-search-drag-files>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="search-camera"
+                 (click)="openDropFiles = !openDropFiles"
+            >
+              <img src="../../../../../assets/icons/search-camera.svg" alt="search-camera">
+            </div>
+            <div class="search-voice">
+              <img src="../../../../../assets/icons/search-voice.svg" alt="search-voice">
+            </div>
+            <span
+              class="advanced-title"
+              (click)="openAdvanced=!openAdvanced"
+              [ngClass]="{'changeColor': openAdvanced}"
+            >Advanced</span>
+          </div>
+        </div>
+        <div class="advanced"
+             [ngClass]="{'advanced-visible': openAdvanced}">
+          <app-search-advanced></app-search-advanced>
+        </div>
+      </div>
+      <div class="search-history" [ngClass]="{'search-history-down': openAdvanced}">
+        <div class="history-header d-flex">
+          <div class="history-title d-flex">
+            <img src="../../../../../assets/icons/search-history.svg" alt="search-history">
+            <span class="title">My search History</span>
+          </div>
+          <div class="clean-history">
+            <span>Clean History</span>
+          </div>
+        </div>
+        <div class="history-links">
+          <app-history-chip></app-history-chip>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+</div>
+

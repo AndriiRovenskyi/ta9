@@ -1,0 +1,19 @@
+<div class="footer">
+  <div class="container">
+    <div>
+      <div class="tip d-flex">
+        <img src="../../../../assets/icons/footer-arrow.svg" alt="tips">
+        <span class="title">Tip!</span>
+      </div>
+      <p class="description">You can use <span class="italic-text">syntax symbols</span> to focus your search results:</p>
+      <div class="footer-legend" *ngIf="showLegend">
+        <app-footer-legend></app-footer-legend>
+      </div>
+      <div class="show-more"
+              (click)="showLegend=!showLegend"
+      >
+        <div>SHOW {{showLegend ? 'LESS' : 'MORE'}}</div>
+      </div>
+    </div>
+  </div>
+</div>

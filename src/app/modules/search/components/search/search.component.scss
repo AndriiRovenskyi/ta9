@@ -1,0 +1,155 @@
+.search {
+  min-height: 100vh;
+  position: relative;
+
+  .container {
+    max-width: 726px;
+    margin: 183px auto 0;
+  }
+
+  .search-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    //margin: 200px auto;
+  }
+
+  .advanced-title {
+    align-self: center;
+    color: lightgray;
+    display: block;
+  }
+
+  .input-section {
+    position: relative;
+  }
+
+
+  .search-history {
+    padding-top: 21px;
+    transition: 0.7s;
+
+
+    &.search-history-down {
+      position: relative;
+      transform: translateY(30px);
+      transition: 0.7s;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 9px;
+    }
+  }
+
+  .search-input {
+    transition: 0.7s;
+    width: 580px;
+
+    .search-btn {
+      border-radius: 0 4px 4px 0;
+
+      .search-img {
+        max-width: 23px;
+      }
+    }
+
+  }
+
+  .drag-files-section {
+    position: absolute;
+    z-index: 3;
+    top: 17px;
+    width: 580px;
+
+  }
+
+  .advanced {
+    position: absolute;
+    width: max-content;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    margin: 0 auto;
+    transition: 0.7s;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  .advanced-visible {
+    top: 40px;
+    opacity: 1;
+    padding-top: 21px;
+    z-index: 1;
+
+    & + .search-history {
+      padding-top: 60px;
+      transition: 0.7s;
+    }
+  }
+
+  .history-header {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #E2E2E2;
+    width: 580px;
+
+    .history-title {
+      align-items: center;
+
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+    }
+
+    .clean-history {
+      cursor: pointer;
+      font-size: 10px;
+      font-weight: 300;
+      color: #0E4F6E;
+    }
+  }
+
+  .history-links {
+    font-size: 14px;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+
+  .search-voice {
+    margin: 0 16px;
+    cursor: pointer;
+  }
+
+  .search-camera {
+    cursor: pointer;
+    margin-left: 23px;
+  }
+
+  .advanced-title {
+    color: #A4B7CE;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .changeColor {
+    color: #3D97FF;
+  }
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+}

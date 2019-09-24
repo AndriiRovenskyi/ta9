@@ -1,0 +1,42 @@
+.header-right {
+  padding-right: 50px;
+
+  .notifications {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+
+  .file-manager {
+    border-bottom: solid 1px grey;
+  }
+
+  .log-in-section {
+    position: relative;
+  }
+
+  .drop-down-content {
+    position: absolute;
+    z-index: 1;
+    background-color: aliceblue;
+    top: 50px;
+
+    .drop-down-arrow {
+      transform: rotate(55deg);
+    }
+  }
+
+  //.add-entity {
+  //  position: relative;
+  //}
+
+  .add-entity-tools {
+    position: relative;
+
+    .add-entity-content {
+      position: absolute;
+      min-width: 150px;
+      top: 4px;
+      left: -100px;
+    }
+  }
+}

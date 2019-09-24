@@ -1,0 +1,66 @@
+<div class="header-right d-flex">
+  <div class="add-entity-tools">
+    <img src="../../../../assets/icons/add-button.png" alt="add-button"
+         (click)="toolsDropDownToggle = !toolsDropDownToggle"
+         (clickOutside)="toolsDropDownToggle=false">
+    <div class="add-entity-content" *ngIf="toolsDropDownToggle">
+      <div class="add-entity-content-button">
+        <img src="../../../../assets/icons/add-button-blue.png" alt="add-button-blue">
+      </div>
+      <div class="add-entity d-flex">
+        <img src="../../../../assets/icons/add-entity.png" alt="add-entity">
+        <span>Add Entity</span>
+      </div>
+      <div class="data-loader d-flex">
+        <img src="../../../../assets/icons/data-loader.png" alt="data-loader">
+        <span>Data Loader</span>
+      </div>
+      <div class="create-dashboard d-flex">
+        <img src="../../../../assets/icons/create-dashboard.png" alt="create-dashboard">
+        <span>Create Dashboard</span>
+      </div>
+    </div>
+  </div>
+  <div class="notifications d-flex">
+    <div class="ideas">
+      <img src="../../../../assets/icons/lampa.png" alt="ideas">
+    </div>
+    <div class="messages">
+      <img src="../../../../assets/icons/dialog.png" alt="messages">
+    </div>
+    <div class="alarms">
+      <img src="../../../../assets/icons/alarm.png" alt="alarms">
+    </div>
+  </div>
+  <div
+    class="log-in-section d-flex"
+    (click)="logInDropDownToggle = !logInDropDownToggle"
+    (clickOutside)="logInDropDownToggle=false"
+  >
+    <img src="../../../../assets/icons/drop-down-arrow.png" alt="drop-arrow">
+    <img src="../../../../assets/icons/person-pic.png" alt="person-pic">
+    <div class="flex-column">
+      <span>Hello</span>
+      <span class="person-name">OrenLug125</span>
+    </div>
+    <div class="drop-down-content" *ngIf="logInDropDownToggle">
+      <img class="drop-down-arrow" src="../../../../assets/icons/drop-down-arrow.png" alt="drop-down-arrow">
+      <div class="admin-tools d-flex">
+        <img src="../../../../assets/icons/admin-tools.png" alt="admin-tools">
+        <span class="drop-down-title">Admin Tools</span>
+      </div>
+      <div class="clear-cache d-flex">
+        <img src="../../../../assets/icons/clear-cache.png" alt="clear-cache">
+        <span class="drop-down-title">Clear Cache</span>
+      </div>
+      <div class="file-manager d-flex">
+        <img src="../../../../assets/icons/file-manager.png" alt="file-manager">
+        <span class="drop-down-title">File load Manager</span>
+      </div>
+      <div class="sing-out d-flex">
+        <img src="../../../../assets/icons/sing-out.png" alt="sing-out">
+        <span class="drop-down-title">Sing Out</span>
+      </div>
+    </div>
+  </div>
+</div>
