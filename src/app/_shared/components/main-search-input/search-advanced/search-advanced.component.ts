@@ -10,34 +10,42 @@ export class SearchAdvancedComponent implements OnInit {
   categories = [
     {
       name: 'Creation Time',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
       opened: false
     },
     {
       name: 'Last updated',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
       opened: false
     },
     {
       name: 'Data source',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
       opened: false
     },
     {
       name: 'Country',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
       opened: false
     },
     {
       name: 'Tags',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
       opened: false
     },
     {
-      name: 'Language'
-      , opened: false
+      name: 'Language',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
+      opened: false
     },
     {
       name: 'Location',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
       opened: false
     },
     {
       name: 'Case',
+      options: ['All', 'English', 'French', 'German', 'Flemish'],
       opened: false
     }
   ];
@@ -50,6 +58,11 @@ export class SearchAdvancedComponent implements OnInit {
 
   onClickedOutside(category) {
     category.opened = false;
+
+  }
+
+  openCategory(category) {
+    category.opened = !category.opened;
   }
 
 

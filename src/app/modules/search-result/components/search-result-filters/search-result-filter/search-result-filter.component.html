@@ -19,8 +19,8 @@
     <div class="d-flex flex-a-center checks-container" *ngFor="let type of filter.types">
       <label>
         <input type="checkbox">
+        <span class="filter-type">{{type}}</span>
       </label>
-      <span class="filter-type">{{type}}</span>
     </div>
     <span class="see-all-filters">See All</span>
   </div>

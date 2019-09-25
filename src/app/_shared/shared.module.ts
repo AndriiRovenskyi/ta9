@@ -9,7 +9,8 @@ import {FooterLegendComponent} from './components/footer/footer-legend/footer-le
 import {MainSearchInputComponent} from './components/main-search-input/main-search-input.component';
 import {SearchAdvancedComponent} from './components/main-search-input/search-advanced/search-advanced.component';
 import {SearchDragFilesComponent} from './components/main-search-input/search-drag-files/search-drag-files.component';
-import {ClickOutsideModule} from "ng-click-outside";
+import {ClickOutsideModule} from 'ng-click-outside';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {ClickOutsideModule} from "ng-click-outside";
     SearchDragFilesComponent],
   imports: [
     CommonModule,
-    ClickOutsideModule
+    ClickOutsideModule,
+    RouterModule
   ],
   exports: [HeaderComponent,
     HeaderLeftComponent,

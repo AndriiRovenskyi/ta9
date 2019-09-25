@@ -1,3 +1,7 @@
+.container {
+  transition: 0.7s;
+}
+
 .advanced-title {
   align-self: center;
   color: lightgray;
@@ -121,4 +125,8 @@
   font-size: 8px;
   font-weight: 400;
   margin: 7px 0;
+}
+
+.mb {
+  margin-bottom: 25px;
 }

@@ -1,4 +1,9 @@
-<div [class.search-result]="isSearchResult">
+<div
+  class="container"
+  [class.search-result]="isSearchResult"
+  [class.mb]="advanced"
+
+>
   <div
     class="search-result-info"
     *ngIf="isSearchResult"
@@ -11,8 +16,13 @@
       <div class="flex-column">
         <div class="d-flex search-input">
           <input type="text" placeholder="Search here">
-          <button class="search-btn">
-            <img class="search-img" src="../../../../../assets/icons/search-button.svg" alt="search">
+          <button
+            class="search-btn"
+            [routerLink]="'/results'"
+          >
+            <img
+              class="search-img"
+              src="../../../../../assets/icons/search-button.svg" alt="search">
           </button>
         </div>
         <span *ngIf="isSearchResult" class="search-time-result">

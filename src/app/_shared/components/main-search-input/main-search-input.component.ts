@@ -8,6 +8,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class MainSearchInputComponent implements OnInit {
   @Output('openAdvanced') openAdvanced: EventEmitter<any> = new EventEmitter();
   @Input() isSearchResult;
+  @Input() openAdvance;
   advanced = false;
   openDropFiles = false;
 
@@ -20,5 +21,4 @@ export class MainSearchInputComponent implements OnInit {
   onClickedOutside(event) {
     this.openDropFiles = false;
   }
-
 }

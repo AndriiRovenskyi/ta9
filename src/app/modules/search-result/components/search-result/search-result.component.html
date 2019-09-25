@@ -1,8 +1,12 @@
 <div class="container">
   <div class="search-result-wrap">
-    <app-main-search-input [isSearchResult]="true"></app-main-search-input>
+    <app-main-search-input
+      [isSearchResult]="true"
+    ></app-main-search-input>
   </div>
-  <aside class="search-result-filters">
-    <app-search-result-filters></app-search-result-filters>
-  </aside>
+  <main class="main">
+    <aside class="search-result-filters">
+      <app-search-result-filters></app-search-result-filters>
+    </aside>
+  </main>
 </div>

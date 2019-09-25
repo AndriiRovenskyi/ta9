@@ -9,8 +9,7 @@ import {ClickOutsideModule} from 'ng-click-outside';
 
 const SearchRoutes: Routes = [{
   path: '',
-  component: SearchComponent,
-  pathMatch: 'full'
+  component: SearchComponent
 }];
 
 @NgModule({
