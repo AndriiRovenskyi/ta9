@@ -187,14 +187,6 @@
         width: 10px;
       }
     }
-
-    .all-checked {
-      input:checked {
-        &:after {
-          width: 10px;
-        }
-      }
-    }
   }
 
   .filter-type {

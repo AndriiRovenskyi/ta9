@@ -1,0 +1,21 @@
+.result-quantity {
+  display: flex;
+  justify-content: space-between;
+
+  .text-quantity {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  .active-quantity {
+    color: #0E4F6E;
+    font-weight: 700;
+  }
+
+  .pagination-text {
+    font-size: 9px;
+    margin-left: 10px;
+  }
+}
