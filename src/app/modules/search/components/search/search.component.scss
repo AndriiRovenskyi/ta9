@@ -16,13 +16,12 @@
   }
 
   .search-history {
-    margin-top: 21px;
     transition: 0.7s;
 
 
     &.search-history-down {
       position: relative;
-      transform: translateY(30px);
+      transform: translateY(20px);
       transition: 0.7s;
     }
 
@@ -62,7 +61,6 @@
     font-size: 14px;
   }
 }
-
 
 
 .footer {

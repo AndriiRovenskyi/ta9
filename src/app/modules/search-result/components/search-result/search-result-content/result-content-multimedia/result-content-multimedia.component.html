@@ -1,7 +1,14 @@
-<div class="container d-flex flex-between">
+<div class="container d-flex">
   <div class="multimedia-list">
-    <div class="multimedia-card-wrap" *ngFor="let card of imgArr">
-      <img [class.active-img]="true" [src]="card.src" alt="img-multimedia">
+    <div
+      class="multimedia-card-wrap pointer"
+      *ngFor="let card of imgArr">
+      <img
+        class="card-img"
+        (click)="changeMultimedia(card.src);card.isActiveCard = !card.isActiveCard"
+        [class.active-img]="card.isActiveCard"
+        [src]="card.src"
+        alt="img-multimedia">
     </div>
   </div>
   <div class="multimedia-details">
@@ -16,7 +23,7 @@
       </div>
     </header>
     <div class="details-img-block">
-      <img class="details-img" src="../../../../../../../assets/images/img-multimedia.png" alt="details-img">
+      <img class="details-img" [src]="imgSrc" alt="details-img">
     </div>
     <div class="multimedia-details-info">
       <h3 class="details-info-title">Patrick_Hood-1445632d110-1.jpg</h3>

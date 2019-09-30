@@ -7,19 +7,48 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ResultContentMultimediaComponent implements OnInit {
   imgArr = [
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'},
-    {src: '../../../../../../../assets/images/img1.jpg'}
+    {
+      src: '../../../../../../../assets/images/img1.jpg',
+      isActiveCard: true
+    },
+    {
+      src: '../../../../../../../assets/images/img2.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img1.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img2.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img1.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img2.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img1.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img2.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img1.jpg',
+      isActiveCard: false
+    },
+    {
+      src: '../../../../../../../assets/images/img2.jpg',
+      isActiveCard: false
+    }
   ];
+  imgSrc = '../../../../../../../assets/images/img1.jpg';
 
   constructor() {
   }
@@ -27,4 +56,10 @@ export class ResultContentMultimediaComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeMultimedia(src) {
+    this.imgSrc = src;
+    this.imgArr.forEach((el) => {
+      el.isActiveCard = false;
+    })
+  }
 }

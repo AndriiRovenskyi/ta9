@@ -1,25 +1,48 @@
-<div class="card-wrap" *ngFor="let card of results">
-  <h3 class="card-title">{{card.title}}</h3>
-  <div class="card-type d-flex" (click)="card.showCardDetail = !card.showCardDetail">
-    <span class="card-type-title">Entity - Person</span>
-    <img src="../../../../../../../../assets/icons/card-detail-arrow.svg" alt="show-detail">
-    <div class="card-type-more">
-      <app-card-drop-down
-        *ngIf="card.showCardDetail"
-      ></app-card-drop-down>
+<div class="container" id="test">
+  <div class="card-wrap pointer"
+       *ngFor="let card of results"
+       [routerLink]="'/items/details/'+ card.id"
+       routerLinkActive="active-details"
+  >
+    <h3
+      class="card-title"
+    >{{card.title}}</h3>
+    <div
+      class="card-type d-flex"
+      (click)="card.openCardTools = !card.openCardTools">
+      <span
+        class="card-type-title"
+
+      >Entity - Person</span>
+      <img
+        *ngIf="!card.isOpenedDetails"
+        src="../../../../../../../../assets/icons/card-detail-arrow.svg" alt="show-detail">
+      <img
+        *ngIf="card.isOpenedDetails"
+        src="../../../../../../../../assets/icons/card-detail-arrow-white.svg" alt="show-detail">
+      <div class="card-type-more">
+        <app-card-drop-down
+          *ngIf="card.openCardTools"
+        ></app-card-drop-down>
+      </div>
     </div>
-  </div>
-  <div class="card-status-btn">Officer</div>
-  <div class="card-details">
-    <div class="card-details-img">
-      <img src="../../../../../../../../assets/images/patrick.png" alt="card-details-img">
+    <div class="card-status-btn">Officer</div>
+    <div class="card-details">
+      <div class="card-details-img">
+        <img src="../../../../../../../../assets/images/patrick.png" alt="card-details-img">
+      </div>
+      <div
+        class="card-details-text"
+      >
+        <span class="search-text">Patrik</span>Patrik Gustafsson ...Patrick Gustafsson,
+        7DF2852C060292D9AF58F5BD1E6B5540,
+        , 12118093,
+      </div>
     </div>
-    <div class="card-details-text">
-      <span class="search-text">Patrik</span>Patrik Gustafsson ...Patrick Gustafsson, 7DF2852C060292D9AF58F5BD1E6B5540,
-      , 12118093,
+    <div
+      class="card-details-info"
+    >
+      Entities | 07/02/2017 19:54:45 | Panama Papers
     </div>
-  </div>
-  <div class="card-details-info">
-    Entities | 07/02/2017 19:54:45 | Panama Papers
   </div>
 </div>

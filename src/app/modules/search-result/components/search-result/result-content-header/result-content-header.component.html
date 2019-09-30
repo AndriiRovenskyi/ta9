@@ -1,9 +1,15 @@
 <div class="result-quantity">
   <div>
-    <span class="text-quantity link-color active-quantity">All(495)</span>
+    <span
+      [routerLink]="'/results/items'"
+      routerLinkActive="active-quantity"
+      class="text-quantity link-color">All(495)</span>
     <span class="text-quantity link-color">Entities(3)</span>
     <span class="text-quantity link-color">Documents(470)</span>
-    <span class="text-quantity link-color">Multimedia(18)</span>
+    <span
+      [routerLink]="'/results/multimedia'"
+      routerLinkActive="active-quantity"
+      class="text-quantity link-color">Multimedia(18)</span>
     <span class="text-quantity link-color">Data Models(4)</span>
   </div>
   <div class="result-pagination">

@@ -7,10 +7,12 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class MainSearchInputComponent implements OnInit {
   @Output('openAdvanced') openAdvanced: EventEmitter<any> = new EventEmitter();
+  @Output('showFilters') showFilters: EventEmitter<any> = new EventEmitter();
   @Input() isSearchResult;
   @Input() openAdvance;
   advanced = false;
   openDropFiles = false;
+  closeFilters = false;
 
   constructor() {
   }
@@ -18,7 +20,12 @@ export class MainSearchInputComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickedOutside(event) {
+  openFilters() {
+    this.showFilters.emit();
+    this.closeFilters = !this.closeFilters;
+  }
+
+  onClickedOutside() {
     this.openDropFiles = false;
   }
 }

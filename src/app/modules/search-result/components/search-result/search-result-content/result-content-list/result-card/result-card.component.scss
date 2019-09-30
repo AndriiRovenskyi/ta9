@@ -1,6 +1,13 @@
+
 .card-wrap {
-  margin-top: 20px;
+
+  outline: none;
+  padding: 7px 0 9px 14px;
+
+  margin: 4px -14px 0 -14px;
+
 }
+
 
 .card-title {
   color: #0E4F6E;
@@ -8,6 +15,7 @@
   font-size: 16px;
   line-height: 20px;
 }
+
 
 .card-type {
   font-size: 12px;
@@ -28,15 +36,6 @@
 
 }
 
-.card-status-btn {
-  background-color: #0FA523;
-  color: #FFFFFF;
-  font-size: 10px;
-  font-weight: 300;
-  padding: 3px 5px 3px;
-  width: min-content;
-  border-radius: 7px;
-}
 
 .card-details {
   display: flex;
@@ -54,8 +53,24 @@
 
 .card-details-info {
   font-size: 10px;
+  font-weight: 300;
 }
 
 .search-text {
   font-weight: 700;
 }
+
+.active-details {
+  background-color: #0E4F6E;
+  border-radius: 4px;
+  color: #FFFFFF;
+
+  .card-title,
+  .card-type-title,
+  .card-details-text {
+    color: #FFFFFF;
+  }
+
+}
+
+

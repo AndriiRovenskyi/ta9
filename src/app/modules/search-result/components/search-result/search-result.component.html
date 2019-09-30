@@ -2,15 +2,16 @@
   <div class="search-result-wrap">
     <app-main-search-input
       [isSearchResult]="true"
+      (showFilters)="showFilters = !showFilters"
     ></app-main-search-input>
   </div>
   <main class="main">
-    <aside class="search-result-filters">
+    <aside class="search-result-filters" [class.close-result-filters]="showFilters">
       <app-search-result-filters></app-search-result-filters>
     </aside>
     <div class="search-content-wrap">
       <app-result-content-header></app-result-content-header>
-      <app-search-result-content></app-search-result-content>
+      <router-outlet></router-outlet>
     </div>
   </main>
 </div>

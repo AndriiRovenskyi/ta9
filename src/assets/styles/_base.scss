@@ -24,6 +24,23 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
 .m5 {
   margin: 5px;
 }
@@ -102,6 +119,16 @@ body {
 
 .mb40 {
   margin-bottom: 40px;
+}
+
+.card-status-btn {
+  background-color: #0FA523;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 300;
+  padding: 3px 5px 3px;
+  width: min-content;
+  border-radius: 7px;
 }
 
 .search-input {

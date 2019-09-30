@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-history-chip',
@@ -6,30 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./history-chip.component.scss']
 })
 export class HistoryChipComponent implements OnInit {
-  historyLinks = [{
-    name: 'Patrik'
-  },
-    {
-      name: 'Melanie'
-    },
-    {
-      name: 'Roberto delganies'
-    },
-    {
-      name: 'Roberto delganies'
-    },
-    {
-      name: 'Roberto delganies'
-    },
-    {
-      name: 'Roberto delganies'
-    },
-    {
-      name: 'Roberto delganies'
-    },
-    {
-      name: 'Roberto delganies'
-    }];
+  @Input() historyLinks;
 
   constructor() {
   }

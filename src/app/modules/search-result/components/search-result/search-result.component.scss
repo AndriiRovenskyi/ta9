@@ -3,6 +3,16 @@
 
 .main {
   display: flex;
+  margin-top: 10px;
+}
+
+.search-result-filters {
+  transition: .7s;
+}
+
+.close-result-filters {
+  margin-left: -147px;
+
 }
 
 .search-content-wrap {
