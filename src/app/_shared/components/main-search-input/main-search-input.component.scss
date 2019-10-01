@@ -39,7 +39,7 @@
 
 .advanced {
   position: absolute;
-  width: max-content;
+  width: 877px;
   top: 25px;
   left: 50%;
   transform: translateX(-50%);
@@ -56,7 +56,7 @@
 
   .advanced {
     margin: 0;
-    left: 50px;
+    left: 45px;
     transform: translateX(0);
   }
 
@@ -109,7 +109,7 @@
 }
 
 .search-filters-button {
-  margin: 0 19px;
+  margin: 0 19px 0 12px;
   cursor: pointer;
   height: 42px;
   display: flex;

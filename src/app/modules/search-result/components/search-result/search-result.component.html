@@ -9,7 +9,10 @@
     <aside class="search-result-filters" [class.close-result-filters]="showFilters">
       <app-search-result-filters></app-search-result-filters>
     </aside>
-    <div class="search-content-wrap">
+    <div
+      class="search-content-wrap"
+      [class.close-filters]="showFilters"
+    >
       <app-result-content-header></app-result-content-header>
       <router-outlet></router-outlet>
     </div>

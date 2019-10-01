@@ -4,9 +4,12 @@
     class="select-wrapper"
     *ngFor="let category of categories"
     (clickOutside)="onClickedOutside(category)"
+
+
   >
-    <div class="select-header"
-         (click)="openCategory(category)"
+    <div
+      class="select-header"
+      (click)="openCategory(category)"
     >
       <img class="time-img"
            *ngIf="category.name === 'Creation Time'"
@@ -14,9 +17,10 @@
       {{category.name}}
     </div>
     <div class="categories">
-      <div class="d-flex flex-a-center checks-container" *ngFor="let option of category.options">
-        <label>
+      <div class="checks-container" *ngFor="let option of category.options">
+        <label class="checkbox-wrap">
           <input type="checkbox">
+          <span class="checkmark"></span>
           <span class="filter-type">{{option}}</span>
         </label>
       </div>

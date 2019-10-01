@@ -21,20 +21,29 @@
     position: relative;
     width: 93px;
     margin-left: 10px;
-    padding: 5px 0 6px 8px;
+
 
 
     /* Styles */
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0px 1px 6px #0000001F;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     outline: none;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+
+    &.active {
+      animation: none;
+    }
+  }
+
+  .select-header {
+    width: 100%;
+    padding: 5px 0 6px 8px;
   }
 
   .select-header:after { /* Little arrow */
@@ -54,7 +63,7 @@
   .select-wrapper .categories {
     /* Size & position */
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
     right: 0;
 
@@ -64,33 +73,23 @@
     border-top: none;
     border-bottom: none;
     list-style: none;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
 
     /* Hiding */
     max-height: 0;
     overflow: hidden;
   }
 
-
-  .select-wrapper .categories div {
-    text-decoration: none;
-    color: #333;
-    padding: 3px 0;
-    transition: all 0.3s ease-out;
-    display: block;
-  }
-
-
   /* Active state */
-
 
 
   .select-wrapper.active .categories {
     max-height: 400px;
+    padding-bottom: 7px;
   }
 
   .select-wrapper:focus {
@@ -118,63 +117,4 @@
   }
 }
 
-.checks-container {
-  margin: 6px 0;
-
-  label {
-    display: flex;
-    align-items: center;
-    color: #636363;
-    user-select: none;
-
-    input {
-      cursor: pointer;
-      position: relative;
-      z-index: 0;
-      width: 0;
-      height: 0;
-      background-color: transparent;
-
-      &:before, &:after {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        height: 11px;
-        text-align: center;
-        transition: 0.2s;
-      }
-
-      &:before {
-        background-color: transparent;
-        width: 11px;
-        height: 11px;
-        box-shadow: 0 0 3px #00000029;
-      }
-
-      &:after {
-        background-image: url("../../../../../assets/icons/check.svg");
-        background-repeat: no-repeat;
-        background-size: 10.5px 10.5px;
-        content: '';
-        overflow: hidden;
-        width: 0;
-        z-index: 2;
-        border: none;
-      }
-    }
-
-    input:checked {
-      &:after {
-        width: 10px;
-      }
-    }
-  }
-
-  .filter-type {
-    margin-left: 15px;
-  }
-}
 

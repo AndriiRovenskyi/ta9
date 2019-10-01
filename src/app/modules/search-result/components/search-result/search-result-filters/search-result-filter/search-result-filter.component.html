@@ -16,9 +16,10 @@
     </div>
   </header>
   <div class="filters-content" *ngIf="filter.opened">
-    <div class="d-flex flex-a-center checks-container" *ngFor="let type of filter.types">
-      <label>
+    <div class="checks-container" *ngFor="let type of filter.types">
+      <label class="checkbox-wrap">
         <input type="checkbox">
+        <span class="checkmark"></span>
         <span class="filter-type">{{type}}</span>
       </label>
     </div>
