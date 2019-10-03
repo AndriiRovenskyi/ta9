@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="result-pagination">
+		<span class="link-color pagination-text pagination-text-active">1</span>
+		<span class="link-color pagination-text">2</span>
+		<span class="link-color pagination-text">3</span>
+		<span class="link-color pagination-text">4</span>
+		<span class="link-color pagination-text">5</span>
+		<span class="link-color pagination-text">6</span>
+		<span class="link-color pagination-text">7</span>
+		<span class="link-color pagination-text">8</span>
+		<span class="link-color pagination-text">></span>
+	</div>
+	<div class="results-per-page">
+		<div class="result-number">
+			<button class="number-btn d-flex flex-a-center"
+					(click)="isOpenedNumber = !isOpenedNumber">{{currentNumber}}</button>
+			<div
+				class="number-dropdown-content flex-column"
+				[class.dropdown-content-block]="isOpenedNumber"
+			>
+				<li
+					*ngFor="let number of resultNumber"
+					(click)="currentNumber = number; isOpenedNumber = false"
+				>{{number}}</li>
+			</div>
+		</div>
+		<span>Results per page</span>
+	</div>
+</div>

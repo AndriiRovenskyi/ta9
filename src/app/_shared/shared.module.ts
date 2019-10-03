@@ -11,31 +11,40 @@ import {SearchAdvancedComponent} from './components/main-search-input/search-adv
 import {SearchDragFilesComponent} from './components/main-search-input/search-drag-files/search-drag-files.component';
 import {ClickOutsideModule} from 'ng-click-outside';
 import {RouterModule} from '@angular/router';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatInputModule} from "@angular/material/input";
+import { SearchResultFooterComponent } from './components/footer/search-result-footer/search-result-footer.component';
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    HeaderLeftComponent,
-    HeaderRightComponent,
-    HeaderNavComponent,
-    FooterComponent,
-    FooterLegendComponent,
-    MainSearchInputComponent,
-    SearchAdvancedComponent,
-    SearchDragFilesComponent],
-  imports: [
-    CommonModule,
-    ClickOutsideModule,
-    RouterModule
-  ],
-  exports: [HeaderComponent,
-    HeaderLeftComponent,
-    HeaderRightComponent,
-    HeaderNavComponent,
-    FooterComponent,
-    FooterLegendComponent,
-    MainSearchInputComponent,
-    ClickOutsideModule]
+    declarations: [
+        HeaderComponent,
+        HeaderLeftComponent,
+        HeaderRightComponent,
+        HeaderNavComponent,
+        FooterComponent,
+        FooterLegendComponent,
+        MainSearchInputComponent,
+        SearchAdvancedComponent,
+        SearchDragFilesComponent,
+        SearchResultFooterComponent],
+    imports: [
+        CommonModule,
+        ClickOutsideModule,
+        RouterModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatInputModule
+    ],
+    exports: [HeaderComponent,
+        HeaderLeftComponent,
+        HeaderRightComponent,
+        HeaderNavComponent,
+        FooterComponent,
+        FooterLegendComponent,
+        MainSearchInputComponent,
+        ClickOutsideModule,
+        MatDatepickerModule, SearchResultFooterComponent]
 })
 export class SharedModule {
 }

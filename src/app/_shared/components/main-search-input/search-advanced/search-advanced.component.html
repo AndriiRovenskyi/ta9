@@ -1,32 +1,44 @@
 <div class="advanced-container">
-  <div
-    [ngClass]="{'active': category.opened}"
-    class="select-wrapper"
-    *ngFor="let category of categories"
-    (clickOutside)="onClickedOutside(category)"
-
-
-  >
-    <div
-      class="select-header"
-      (click)="openCategory(category)"
-    >
-      <img class="time-img"
-           *ngIf="category.name === 'Creation Time'"
-           src="../../../../../assets/icons/advanced-time.svg" alt="advanced-time">
-      {{category.name}}
-    </div>
-    <div class="categories">
-      <div class="checks-container" *ngFor="let option of category.options">
-        <label class="checkbox-wrap">
-          <input type="checkbox">
-          <span class="checkmark"></span>
-          <span class="filter-type">{{option}}</span>
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="clear-advanced">
-    Clear all
-  </div>
+	<div
+		(clickOutside)="onClickedOutside(category)"
+		*ngFor="let category of categories"
+		[ngClass]="{'active': category.opened}"
+		class="select-wrapper"
+	>
+		<div
+			(click)="openCategory(category)"
+			class="select-header"
+			[class.select-header-date]="category.id === 1"
+		>
+			<img *ngIf="category.id === 1"
+				 alt="advanced-time"
+				 class="time-img" src="../../../../../assets/icons/advanced-time.svg">
+			{{category.name}}
+		</div>
+		<div class="categories"
+			 [class.category-date]="category.id == 1">
+			<div *ngFor="let option of category.options"
+				 class="checks-container"
+			>
+				<div
+					*ngIf="option==='date'">
+					<mat-form-field class="date-picker">
+						<input matInput [matDatepicker]="picker" placeholder="Choose a date">
+						<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+						<mat-datepicker #picker></mat-datepicker>
+					</mat-form-field>
+				</div>
+				<label
+					*ngIf="option!=='date'"
+					class="checkbox-wrap">
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					<span class="filter-type">{{option}}</span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="clear-advanced">
+		Clear all
+	</div>
 </div>

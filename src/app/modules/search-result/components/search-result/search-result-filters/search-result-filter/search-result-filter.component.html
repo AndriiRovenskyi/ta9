@@ -18,7 +18,7 @@
   <div class="filters-content" *ngIf="filter.opened">
     <div class="checks-container" *ngFor="let type of filter.types">
       <label class="checkbox-wrap">
-        <input type="checkbox">
+        <input type="checkbox" [checked]="">
         <span class="checkmark"></span>
         <span class="filter-type">{{type}}</span>
       </label>

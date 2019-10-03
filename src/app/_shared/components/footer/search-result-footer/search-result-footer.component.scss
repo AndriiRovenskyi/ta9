@@ -1,0 +1,51 @@
+.container {
+  padding: 40px 175px 30px;
+}
+
+.pagination-text {
+  font-size: 12px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.pagination-text-active {
+  font-weight: 700;
+  color: #3D97FF;
+}
+
+.results-per-page {
+  margin-top: 13px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #696969;
+}
+
+.result-number {
+  margin: 0 9px 0 -3px;
+  position: relative;
+  display: inline-block;
+
+  .number-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 16px;
+
+    li {
+      cursor: pointer;
+      margin-bottom: 2px;
+    }
+  }
+
+  .dropdown-content-block {
+    display: block;
+  }
+
+  .number-btn:after {
+    content: '';
+    background-image: url("src/assets/icons/drop-down-arrow.svg");
+    width: 6px;
+    height: 4px;
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
