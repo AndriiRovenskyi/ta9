@@ -16,12 +16,26 @@
   color: #000000;
   font-weight: 500;
   margin: 4px 0;
-  position: relative;
-  width: max-content;
+
+
+  &:after {
+    content: '';
+    background-image: url("src/assets/icons/drop-down-arrow.svg");
+    width: 6px;
+    height: 4px;
+  }
 
   .card-type-title {
     margin-right: 3px;
     cursor: pointer;
+    position: relative;
+
+    .card-type-more {
+      position: absolute;
+      top: -8px;
+      left: 100%;
+      z-index: 5;
+    }
   }
 }
 

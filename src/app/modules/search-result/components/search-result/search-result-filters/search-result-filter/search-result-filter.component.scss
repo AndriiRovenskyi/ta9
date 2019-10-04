@@ -1,9 +1,12 @@
+.search-filter-wrap {
+  background-color: #F8F8F8;
+  max-height: 98vh;
+  overflow: auto;
+}
+
 .search-filter {
   border-bottom: 1px solid #D6D3D3;
   padding-bottom: 5px;
-  box-shadow: 0 5px 5px #00000038;
-  background-color: #F8F8F8;
-
 }
 
 .down-arrow {
