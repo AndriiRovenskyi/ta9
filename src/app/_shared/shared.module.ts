@@ -11,10 +11,13 @@ import {SearchAdvancedComponent} from './components/main-search-input/search-adv
 import {SearchDragFilesComponent} from './components/main-search-input/search-drag-files/search-drag-files.component';
 import {ClickOutsideModule} from 'ng-click-outside';
 import {RouterModule} from '@angular/router';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material/core';
-import {MatInputModule} from "@angular/material/input";
-import { SearchResultFooterComponent } from './components/footer/search-result-footer/search-result-footer.component';
+import {MatInputModule} from '@angular/material/input';
+import {SearchResultFooterComponent} from './components/footer/search-result-footer/search-result-footer.component';
+import {FormsModule} from '@angular/forms';
+import {AllFiltersComponent} from "./dialogs/all-filters/all-filters.component";
+import {MatRangeDatepickerModule, MatRangeNativeDateModule} from "mat-range-datepicker";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+
 
 @NgModule({
     declarations: [
@@ -27,14 +30,18 @@ import { SearchResultFooterComponent } from './components/footer/search-result-f
         MainSearchInputComponent,
         SearchAdvancedComponent,
         SearchDragFilesComponent,
-        SearchResultFooterComponent],
+        SearchResultFooterComponent,
+        AllFiltersComponent,
+    ],
     imports: [
         CommonModule,
         ClickOutsideModule,
         RouterModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatInputModule
+        MatInputModule,
+        FormsModule,
+        MatRangeDatepickerModule,
+        MatRangeNativeDateModule,
+        MatDatepickerModule
     ],
     exports: [HeaderComponent,
         HeaderLeftComponent,
@@ -44,7 +51,11 @@ import { SearchResultFooterComponent } from './components/footer/search-result-f
         FooterLegendComponent,
         MainSearchInputComponent,
         ClickOutsideModule,
-        MatDatepickerModule, SearchResultFooterComponent]
+        SearchResultFooterComponent,
+        MatRangeDatepickerModule,
+        MatRangeNativeDateModule,
+        MatDatepickerModule
+    ]
 })
 export class SharedModule {
 }

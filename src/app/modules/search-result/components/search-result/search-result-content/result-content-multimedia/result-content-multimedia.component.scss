@@ -8,11 +8,6 @@
   grid-template-rows: repeat(auto-fill, 114px);
   grid-gap: 18px;
 
-
-  .multimedia-card-wrap {
-
-  }
-
   .card-img {
     width: 170px;
     opacity: 0.3;
@@ -36,6 +31,14 @@
 
   .header-details-text {
     align-self: center;
+  }
+
+  .header-details-btn {
+    opacity: 0.4;
+
+    &.activeLink {
+      opacity: 1;
+    }
   }
 
   .details-img {
@@ -71,7 +74,6 @@
       padding: 6px 25px;
       border-radius: 12px;
       display: inline-block;
-
     }
   }
 }

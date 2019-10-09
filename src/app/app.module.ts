@@ -7,22 +7,24 @@ import {AppComponent} from './app.component';
 
 import {SharedModule} from './_shared/shared.module';
 import {SearchResultModule} from './modules/search-result/search-result.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CommonModule} from '@angular/common';
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    SearchResultModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        CommonModule,
+        SharedModule,
+        SearchResultModule,
+        BrowserAnimationsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

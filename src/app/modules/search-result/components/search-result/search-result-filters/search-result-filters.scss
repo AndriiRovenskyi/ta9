@@ -1,0 +1,31 @@
+.search-filters-wrap {
+  width: 147px;
+  height: calc(100vh - 93px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.clear-all-filters {
+  font-size: 9px;
+  color: #3D97FF;
+  font-weight: 300;
+  cursor: pointer;
+  padding-left: 12px;
+  background-color: #F8F8F8;
+  width: 130px;
+  z-index: 2;
+  position: fixed;
+  padding-bottom: 10px;
+}
+@supports (-ms-ime-align: auto) {
+  .clear-all-filters {
+    width: 130px;
+  }
+}
+
+.result-filters {
+  z-index: 1;
+  height: auto;
+  margin-top: 14px;
+}

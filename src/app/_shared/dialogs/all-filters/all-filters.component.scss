@@ -1,0 +1,106 @@
+.container {
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.26);
+  border-radius: 7px;
+  padding: 5px 6px 15px 16px;
+  font-weight: 500;
+  color: #000000;
+  margin: -24px;
+}
+
+.all-filters-header {
+  font-size: 12px;
+
+
+  .all-filters-title {
+    span {
+      margin-left: 7px;
+      user-select: none;
+    }
+  }
+}
+
+.search-section {
+  margin: 12px 0 7px;
+  padding-right: 38px;
+
+  .search-input {
+    max-width: 290px;
+    margin-right: 16px;
+
+
+    input {
+      width: 100vw;
+      padding-left: 9px;
+      max-width: 257px;
+      font-size: 9px;
+
+      &::placeholder {
+        font-size: 7px;
+        color: #000000;
+      }
+    }
+
+    .search-btn {
+      width: 24px;
+      height: 21px;
+    }
+
+    .search-img {
+      width: 11px;
+    }
+  }
+
+  .sort-img {
+    user-select: none;
+  }
+
+  .sort-filters {
+    .sort-high-low {
+      margin-right: 9px;
+    }
+  }
+}
+
+.all-filters-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 250px;
+
+  .checks-container {
+    width: 50%;
+
+    .checkbox-wrap {
+      font-size: 24px;
+    }
+
+    .filter-type {
+      font-size: 12px;
+      position: relative;
+      bottom: 3px;
+    }
+
+    .checkmark {
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+.all-filters-footer {
+  margin-top: 10px;
+  align-items: flex-end;
+
+  span {
+    font-size: 12px;
+    user-select: none;
+  }
+
+  .btn-primary {
+    margin-right: 5px;
+  }
+}
+
+
+

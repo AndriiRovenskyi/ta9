@@ -1,73 +1,78 @@
 <div class="container flex-between">
-  <div class="multimedia-list">
-    <div
-      class="multimedia-card-wrap pointer"
-      *ngFor="let card of imgArr">
-      <img
-        class="card-img"
-        (click)="changeMultimedia(card.src);card.isActiveCard = !card.isActiveCard"
-        [class.active-img]="card.isActiveCard"
-        [src]="card.src"
-        alt="img-multimedia">
-    </div>
-  </div>
-  <div class="multimedia-details">
-    <header class="header-details flex-around flex-a-center">
-      <div class="d-flex pointer">
-        <img src="../../../../../../../assets/icons/content-details-preview-btn.svg" alt="preview-btn">
-        <span class="header-details-text">Preview</span>
-      </div>
-      <div class="d-flex pointer">
-        <img class="header-details-img" src="../../../../../../../assets/icons/header-details-dialog.svg" alt="dialog">
-        <div class="header-details-text">Annotations</div>
-      </div>
-    </header>
-    <div class="details-img-block">
-      <img class="details-img" [src]="imgSrc" alt="details-img">
-    </div>
-    <div class="multimedia-details-info">
-      <h3 class="details-info-title">Patrick_Hood-1445632d110-1.jpg</h3>
-      <div class="d-flex details-info-wrap flex-between">
-        <div class="flex-column">
-          <div class="d-flex mb10">
-            <span class="details-info-subtitle">Date</span>
-            <span class="details-info-text">10/18/2019</span>
-          </div>
-          <div class="d-flex mb10">
-            <span class="details-info-subtitle">Location</span>
-            <span class="details-info-text">England, London, 1532 St</span>
-          </div>
-          <div class="d-flex mb10">
-            <span class="details-info-subtitle">Time</span>
-            <span class="details-info-text">14:32pm</span>
-          </div>
-          <div class="d-flex">
-            <span class="details-info-subtitle">Case</span>
-            <span class="details-info-text">7788788-05</span>
-          </div>
-        </div>
-        <div class="flex-column">
-          <div class="d-flex mb10">
-            <span class="details-info-subtitle">Owner</span>
-            <span class="details-info-text">Patrick Hood</span>
-          </div>
-          <div class="d-flex mb10">
-            <span class="details-info-subtitle">Residence</span>
-            <span class="details-info-text">995 Avn, London UK</span>
-          </div>
-          <div class="d-flex mb10">
-            <span class="details-info-subtitle">Driver ID</span>
-            <span class="details-info-text">8977654654</span>
-          </div>
-          <div class="d-flex">
-            <span class="details-info-subtitle">Record</span>
-            <span class="details-info-text">No</span>
-          </div>
-        </div>
-      </div>
-      <div class="suspects-btn details-info-text pointer">
-        Suspects
-      </div>
-    </div>
-  </div>
+	<div class="multimedia-list">
+		<div
+			class="multimedia-card-wrap pointer"
+			*ngFor="let card of imgArr">
+			<img
+				class="card-img"
+				(click)="changeMultimedia(card.src);card.isActiveCard = !card.isActiveCard"
+				[class.active-img]="card.isActiveCard"
+				[src]="card.src"
+				alt="img-multimedia">
+		</div>
+	</div>
+	<div class="multimedia-details">
+		<header class="header-details flex-around flex-a-center">
+			<div class="d-flex pointer header-details-btn"
+				 [class.activeLink]="isActive"
+				 (click)="isActive=!isActive">
+				<img src="../../../../../../../assets/icons/content-details-preview-btn.svg" alt="preview-btn">
+				<span class="header-details-text">Preview</span>
+			</div>
+			<div class="d-flex pointer header-details-btn"
+				 [class.activeLink]="!isActive"
+				 (click)="isActive=!isActive">
+				<img class="header-details-img" src="../../../../../../../assets/icons/header-details-dialog.svg"
+					 alt="dialog">
+				<div class="header-details-text">Annotations</div>
+			</div>
+		</header>
+		<div class="details-img-block">
+			<img class="details-img" [src]="imgSrc" alt="details-img">
+		</div>
+		<div class="multimedia-details-info">
+			<h3 class="details-info-title">Patrick_Hood-1445632d110-1.jpg</h3>
+			<div class="d-flex details-info-wrap flex-between">
+				<div class="flex-column">
+					<div class="d-flex mb10">
+						<span class="details-info-subtitle">Date</span>
+						<span class="details-info-text">10/18/2019</span>
+					</div>
+					<div class="d-flex mb10">
+						<span class="details-info-subtitle">Location</span>
+						<span class="details-info-text">England, London, 1532 St</span>
+					</div>
+					<div class="d-flex mb10">
+						<span class="details-info-subtitle">Time</span>
+						<span class="details-info-text">14:32pm</span>
+					</div>
+					<div class="d-flex">
+						<span class="details-info-subtitle">Case</span>
+						<span class="details-info-text">7788788-05</span>
+					</div>
+				</div>
+				<div class="flex-column">
+					<div class="d-flex mb10">
+						<span class="details-info-subtitle">Owner</span>
+						<span class="details-info-text">Patrick Hood</span>
+					</div>
+					<div class="d-flex mb10">
+						<span class="details-info-subtitle">Residence</span>
+						<span class="details-info-text">995 Avn, London UK</span>
+					</div>
+					<div class="d-flex mb10">
+						<span class="details-info-subtitle">Driver ID</span>
+						<span class="details-info-text">8977654654</span>
+					</div>
+					<div class="d-flex">
+						<span class="details-info-subtitle">Record</span>
+						<span class="details-info-text">No</span>
+					</div>
+				</div>
+			</div>
+			<div class="suspects-btn details-info-text pointer">
+				Suspects
+			</div>
+		</div>
+	</div>
 </div>

@@ -1,0 +1,6 @@
+<div class="search-filters-wrap flex-column">
+	<span class="clear-all-filters" (click)="clearFilters()">Clear all</span>
+	<div class="result-filters flex-column">
+		<app-aside-filter [filters]="getFilters()"></app-aside-filter>
+	</div>
+</div>

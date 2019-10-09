@@ -1,0 +1,48 @@
+<div class="container">
+	<header class="all-filters-header flex-between flex-a-center">
+		<div class="all-filters-title d-flex">
+			<img src="../../../../assets/icons/all-filters-icon.svg" alt="all-filters-icon">
+			<span>Language</span>
+		</div>
+		<div class="close-btn pointer" (click)="closeDialog()">
+			<img src="../../../../assets/icons/close-btn.svg" alt="close-btn">
+		</div>
+	</header>
+	<div class="search-section d-flex">
+		<div class="d-flex search-input">
+			<input type="text" placeholder="Search">
+			<button
+				class="search-btn">
+				<img
+					class="search-img"
+					src="../../../../assets/icons/search-button.svg" alt="search">
+			</button>
+		</div>
+		<div class="sort-filters d-flex flex-a-center">
+			<div class="sort-img sort-high-low" (click)="sortByHighLowFn()">
+				<img [src]="sortByHighLow[sortedByHighLow]"
+					 alt="altText">
+			</div>
+			<div class="sort-img" (click)="sortByAlpahbetFn()">
+				<img [src]="sortByAlphabet[sortedAlphabet]"
+					 alt="sort-a-z">
+			</div>
+		</div>
+	</div>
+	<div class="all-filters-wrap">
+		<div class="checks-container" *ngFor="let type of types">
+			<label class="checkbox-wrap"
+				   (click)="checkFilter(type)"
+				   [class.is-checked]="type.isChecked">
+				<span class="checkmark"></span>
+				<span class="filter-type">{{type.checkName}}</span>
+			</label>
+		</div>
+	</div>
+	<footer class="all-filters-footer flex-between">
+		<span>({{amountSelected}})Filters selected</span>
+		<div class="btn-primary">
+			Apply
+		</div>
+	</footer>
+</div>

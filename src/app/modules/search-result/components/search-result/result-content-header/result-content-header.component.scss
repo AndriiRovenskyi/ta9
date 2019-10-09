@@ -1,9 +1,18 @@
 .result-quantity {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px 6px 40px;
-  margin: 0 -30px 0 -40px;
+  padding: 0 30px 14px 182px;
   background-color: #f8f8f8;
+  transition: .7s;
+  position: fixed;
+  width: 100%;
+  margin-top: -2px;
+  z-index: 1;
+
+  &.left-side {
+    padding-left: 63px;
+  }
+
 
   .text-quantity {
     font-size: 12px;
@@ -22,4 +31,10 @@
     font-size: 9px;
     margin-left: 10px;
   }
+
+}
+
+.result-quantity-change {
+  padding: 0 55px 6px 65px;
+  margin: 0 -55px 0 -65px;
 }

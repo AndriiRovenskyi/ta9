@@ -1,4 +1,5 @@
-import {Component, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
 
 
 @Component({
@@ -7,60 +8,97 @@ import {Component, Input, OnInit, ViewChild} from '@angular/core';
     styleUrls: ['./search-advanced.component.scss']
 })
 export class SearchAdvancedComponent implements OnInit {
-    @ViewChild('picker') picker;
+    @ViewChild('resultPicker') resultPicker;
     activeCategory = false;
-    categories = [
-        {
-            id: 1,
-            name: 'Creation Time',
-            opened: true,
-            options: ['date']
-        },
-        {
-            id: 2,
-            name: 'Last updated',
-            options: ['All', 'English', 'French', 'German', 'Flemish'],
-            opened: false
-        },
-        {
-            id: 3,
-            name: 'Data source',
-            options: ['All', 'English', 'French', 'German', 'Flemish'],
-            opened: false
-        },
-        {
-            id: 4,
-            name: 'Country',
-            options: ['All', 'English', 'French', 'German', 'Flemish'],
-            opened: false
-        },
-        {
-            id: 5,
-            name: 'Tags',
-            options: ['All', 'English', 'French', 'German', 'Flemish'],
-            opened: false
-        },
-        {
-            id: 6,
-            name: 'Language',
-            options: ['All', 'English', 'French', 'German', 'Flemish'],
-            opened: false
-        },
-        {
-            id: 7,
-            name: 'Location',
-            options: ['All', 'English', 'French', 'German', 'Flemish'],
-            opened: false
-        },
-        {
-            id: 8,
-            name: 'Case',
-            options: ['All', 'English', 'French', 'German', 'Flemish'],
-            opened: false
-        }
-    ];
+    categories = [];
 
     constructor() {
+        this.categories = [
+            {
+                id: 1,
+                name: 'Creation Time',
+                opened: true,
+                options: ['date']
+            },
+            {
+                id: 2,
+                name: 'Last updated',
+                options: [
+                    {checkName: 'All', isChecked: false},
+                    {checkName: 'English', isChecked: false},
+                    {checkName: 'French', isChecked: false},
+                    {checkName: 'German', isChecked: false},
+                    {checkName: 'Flemish', isChecked: false}],
+                opened: false
+            },
+            {
+                id: 3,
+                name: 'Data source',
+                options: [
+                    {checkName: 'All', isChecked: false},
+                    {checkName: 'English', isChecked: false},
+                    {checkName: 'French', isChecked: false},
+                    {checkName: 'German', isChecked: false},
+                    {checkName: 'Flemish', isChecked: false}],
+                opened: false
+            },
+            {
+                id: 4,
+                name: 'Country',
+                options: [
+                    {checkName: 'All', isChecked: false},
+                    {checkName: 'English', isChecked: false},
+                    {checkName: 'French', isChecked: false},
+                    {checkName: 'German', isChecked: false},
+                    {checkName: 'Flemish', isChecked: false}],
+                opened: false
+            },
+            {
+                id: 5,
+                name: 'Tags',
+                options: [
+                    {checkName: 'All', isChecked: false},
+                    {checkName: 'English', isChecked: false},
+                    {checkName: 'French', isChecked: false},
+                    {checkName: 'German', isChecked: false},
+                    {checkName: 'Flemish', isChecked: false}],
+                opened: false
+            },
+            {
+                id: 6,
+                name: 'Language',
+                options: [
+                    {checkName: 'All', isChecked: false},
+                    {checkName: 'English', isChecked: false},
+                    {checkName: 'French', isChecked: false},
+                    {checkName: 'German', isChecked: false},
+                    {checkName: 'Flemish', isChecked: false}],
+                opened: false
+            },
+            {
+                id: 7,
+                name: 'Location',
+                options: [
+                    {checkName: 'All', isChecked: false},
+                    {checkName: 'English', isChecked: false},
+                    {checkName: 'French', isChecked: false},
+                    {checkName: 'German', isChecked: false},
+                    {checkName: 'Flemish', isChecked: false}],
+                opened: false
+            },
+            {
+                id: 8,
+                name: 'Case',
+                options: [
+                    {checkName: 'All', isChecked: false},
+                    {checkName: 'English', isChecked: false},
+                    {checkName: 'French', isChecked: false},
+                    {checkName: 'German', isChecked: false},
+                    {checkName: 'Flemish', isChecked: false}],
+                opened: false
+            }
+
+        ];
     }
 
     ngOnInit() {
@@ -75,9 +113,16 @@ export class SearchAdvancedComponent implements OnInit {
         category.opened = !category.opened;
 
         if (category.name === 'Creation Time') {
-            this.picker.open();
+            this.resultPicker.open();
         }
     }
 
-
+    checkOption(option, category) {
+        option.isChecked = !option.isChecked;
+        if (option.checkName === 'All' && option.isChecked) {
+            category.options.forEach(el => {
+                el.isChecked = true;
+            });
+        }
+    }
 }

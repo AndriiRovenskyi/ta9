@@ -1,23 +1,27 @@
 <div class="container">
-	<div class="search-result-wrap">
+	<div class="search-result-input">
 		<app-main-search-input
 			[isSearchResult]="true"
 			(showFilters)="showFilters = !showFilters"
+			(openedAdvanced)="activeAdvanced = !activeAdvanced"
 		></app-main-search-input>
 	</div>
-	<main class="main">
-		<aside class="search-result-filters" [class.close-result-filters]="showFilters">
-			<app-search-result-filters></app-search-result-filters>
+	<div class="background-advanced"
+		 [class.active-advanced]="activeAdvanced"></div>
+	<main class="main"
+		  [class.isActive-advanced]="activeAdvanced">
+		<aside class="search-result-filters"
+			   [class.close-result-filters]="showFilters">
+			<app-search-result-filters [activeMultimedia]="activeMultimedia"></app-search-result-filters>
 		</aside>
-		<div class="search-content-wrap"
-			 [class.close-filters]="showFilters">
-			<app-result-content-header></app-result-content-header>
-			<div class="search-content">
+		<div class="search-content-wrap">
+			<app-result-content-header [showFilters]="showFilters"></app-result-content-header>
+			<div class="search-content" [class.left-side]="showFilters">
 				<router-outlet></router-outlet>
 			</div>
 		</div>
 	</main>
-	<footer>
-		<app-search-result-footer></app-search-result-footer>
-	</footer>
 </div>
+<footer class="footer">
+	<app-search-result-footer></app-search-result-footer>
+</footer>
