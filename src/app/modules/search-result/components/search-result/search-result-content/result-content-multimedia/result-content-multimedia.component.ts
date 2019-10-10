@@ -61,6 +61,6 @@ export class ResultContentMultimediaComponent implements OnInit {
         this.imgSrc = src;
         this.imgArr.forEach((el) => {
             el.isActiveCard = false;
-        })
+        });
     }
 }
