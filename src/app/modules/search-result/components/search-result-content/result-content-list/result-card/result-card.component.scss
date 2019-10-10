@@ -2,6 +2,12 @@
   outline: none;
   padding: 7px 0 9px 14px;
   margin: 4px -14px 0 -14px;
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
 }
 
 .card-title {
@@ -65,7 +71,12 @@
   background-color: #0E4F6E;
   border-radius: 4px;
   color: #FFFFFF;
-
+  .show {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
   .card-title,
   .card-type-title,
   .card-details-text {

@@ -16,4 +16,13 @@
     align-self: center;
     margin-left: 4px;
   }
+
+  .header-link {
+    opacity: 0.4;
+    user-select: none;
+  }
+
+  .active-link {
+    opacity: 1;
+  }
 }

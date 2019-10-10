@@ -21,6 +21,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -43,6 +44,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -65,6 +67,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -87,6 +90,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -109,6 +113,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -120,7 +125,7 @@ export class SearchResultFiltersComponent implements OnInit {
             sortedAlphabet: 0
         },
         {
-            name: 'Test',
+            name: 'Test1',
             types: [
                 {checkName: 'Accurate Location', isChecked: false},
                 {checkName: 'ADINT', isChecked: false},
@@ -130,6 +135,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -141,17 +147,39 @@ export class SearchResultFiltersComponent implements OnInit {
             sortedAlphabet: 0
         },
         {
-            name: 'test2',
+            name: 'Test2',
             types: [
-                {checkName: 'All', isChecked: false},
-                {checkName: 'English', isChecked: false},
-                {checkName: 'French', isChecked: false},
-                {checkName: 'German', isChecked: false},
-                {checkName: 'Arabic', isChecked: false}
+                {checkName: 'Accurate Location', isChecked: false},
+                {checkName: 'ADINT', isChecked: false},
+                {checkName: 'OSINT', isChecked: false},
+                {checkName: 'Orange', isChecked: false}
             ],
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
+                '../../../../../../../assets/icons/hi-lo-down.svg'
+            ],
+            sortedByHighLow: 0,
+            sortByAlphabet: [
+                '../../../../../../../assets/icons/a-z-off.svg',
+                '../../../../../../../assets/icons/z-a-up.svg',
+                '../../../../../../../assets/icons/sort-a-z-down.svg',
+            ],
+            sortedAlphabet: 0
+        },
+        {
+            name: 'Test3',
+            types: [
+                {checkName: 'Accurate Location', isChecked: false},
+                {checkName: 'ADINT', isChecked: false},
+                {checkName: 'OSINT', isChecked: false},
+                {checkName: 'Orange', isChecked: false}
+            ],
+            opened: true,
+            sortByHighLow: [
+                '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -175,6 +203,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -197,6 +226,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -218,6 +248,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -239,6 +270,95 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
+                '../../../../../../../assets/icons/hi-lo-down.svg'
+            ],
+            sortedByHighLow: 0,
+            sortByAlphabet: [
+                '../../../../../../../assets/icons/a-z-off.svg',
+                '../../../../../../../assets/icons/z-a-up.svg',
+                '../../../../../../../assets/icons/sort-a-z-down.svg',
+            ],
+            sortedAlphabet: 0
+        },
+        {
+            name: 'Data Source',
+            types: [
+                {checkName: 'Accurate Location', isChecked: false},
+                {checkName: 'ADINT', isChecked: false},
+                {checkName: 'OSINT', isChecked: false},
+                {checkName: 'Orange', isChecked: false}
+            ],
+            opened: true,
+            sortByHighLow: [
+                '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
+                '../../../../../../../assets/icons/hi-lo-down.svg'
+            ],
+            sortedByHighLow: 0,
+            sortByAlphabet: [
+                '../../../../../../../assets/icons/a-z-off.svg',
+                '../../../../../../../assets/icons/z-a-up.svg',
+                '../../../../../../../assets/icons/sort-a-z-down.svg',
+            ],
+            sortedAlphabet: 0
+        },
+        {
+            name: 'Data Source',
+            types: [
+                {checkName: 'Accurate Location', isChecked: false},
+                {checkName: 'ADINT', isChecked: false},
+                {checkName: 'OSINT', isChecked: false},
+                {checkName: 'Orange', isChecked: false}
+            ],
+            opened: true,
+            sortByHighLow: [
+                '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
+                '../../../../../../../assets/icons/hi-lo-down.svg'
+            ],
+            sortedByHighLow: 0,
+            sortByAlphabet: [
+                '../../../../../../../assets/icons/a-z-off.svg',
+                '../../../../../../../assets/icons/z-a-up.svg',
+                '../../../../../../../assets/icons/sort-a-z-down.svg',
+            ],
+            sortedAlphabet: 0
+        },
+        {
+            name: 'Data Source',
+            types: [
+                {checkName: 'Accurate Location', isChecked: false},
+                {checkName: 'ADINT', isChecked: false},
+                {checkName: 'OSINT', isChecked: false},
+                {checkName: 'Orange', isChecked: false}
+            ],
+            opened: true,
+            sortByHighLow: [
+                '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
+                '../../../../../../../assets/icons/hi-lo-down.svg'
+            ],
+            sortedByHighLow: 0,
+            sortByAlphabet: [
+                '../../../../../../../assets/icons/a-z-off.svg',
+                '../../../../../../../assets/icons/z-a-up.svg',
+                '../../../../../../../assets/icons/sort-a-z-down.svg',
+            ],
+            sortedAlphabet: 0
+        },
+        {
+            name: 'Data Source',
+            types: [
+                {checkName: 'Accurate Location', isChecked: false},
+                {checkName: 'ADINT', isChecked: false},
+                {checkName: 'OSINT', isChecked: false},
+                {checkName: 'Orange', isChecked: false}
+            ],
+            opened: true,
+            sortByHighLow: [
+                '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,

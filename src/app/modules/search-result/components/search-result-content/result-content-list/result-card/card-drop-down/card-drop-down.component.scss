@@ -4,6 +4,13 @@
   border-radius: 4px;
   padding: 0 0 12px 8px;
   width: 113px;
+  position: relative;
+  left: -8px;
+  color: #000000;
+  //& > div:not(:first-child):hover {
+  //  background: rgba(0,0,0,.2);
+  //  transition: 7ms;
+  //}
 }
 
 .drop-down-img {
@@ -18,3 +25,4 @@
   margin-left: 7px;
   cursor: pointer;
 }
+

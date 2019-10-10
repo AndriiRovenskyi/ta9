@@ -1,27 +1,27 @@
 <div class="details-header-bottom">
-  <div class="header-bottom-wrap">
-    <div class="details-title-section">
-      <div class="d-flex">
-        <div class="title-section-img">
-          <img src="../../../../../../../assets/icons/title-section-img.svg" alt="title-section-img">
-        </div>
-        <div class="align-self-center ml20">
-          <h3 class="detail-section-title">Patrick Gustafsson</h3>
-          <div class="card-status-btn mt10">Officer</div>
-        </div>
-        <button class="title-section-btn">Open</button>
-      </div>
-    </div>
-    <nav class="header-bottom-links flex-between flex-a-center ">
-      <li class="header-bottom-link d-flex flex-a-center ">
-        <img src="../../../../../../../assets/icons/details-header-favorites.svg" alt="favorites">
-        <span>Mark</span>
-      </li>
-      <li class="header-bottom-link active-link">Main Details</li>
-      <li class="header-bottom-link">Communication</li>
-      <li class="header-bottom-link">Additional</li>
-      <li class="header-bottom-link">Images</li>
-      <li class="header-bottom-link ">Passport Information</li>
-    </nav>
-  </div>
+	<div class="header-bottom-wrap">
+		<div class="details-title-section">
+			<div class="d-flex">
+				<div class="title-section-img" (click)="x(cardDetail)">
+					<img src="../../../../../../../assets/icons/title-section-img.svg" alt="title-section-img">
+				</div>
+				<div class="align-self-center ml20">
+					<h3 class="detail-section-title">{{cardDetail.title}}</h3>
+					<div class="card-status-btn mt10" *ngIf="cardDetail.status">{{cardDetail.status}}</div>
+				</div>
+				<button class="title-section-btn">Open</button>
+			</div>
+		</div>
+		<nav class="header-bottom-links flex-between flex-a-center ">
+			<li class="header-bottom-link d-flex flex-a-center ">
+				<img src="../../../../../../../assets/icons/details-header-favorites.svg" alt="favorites">
+				<span>Mark</span>
+			</li>
+			<li *ngFor="let link of headerLinks"
+				class="header-bottom-link"
+				[class.active-link]="link.isActive"
+				(click)="activeLink(link)"
+			>{{link.linkName}}</li>
+		</nav>
+	</div>
 </div>

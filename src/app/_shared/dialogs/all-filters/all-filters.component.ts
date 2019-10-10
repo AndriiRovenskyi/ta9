@@ -11,6 +11,7 @@ export class AllFiltersComponent implements OnInit {
     amountSelected = 0;
     sortByHighLow = [
         '../../../../../../../assets/icons/hi-lo-off.svg',
+        '../../../../assets/icons/sort-high-up.svg',
         '../../../../../../../assets/icons/hi-lo-down.svg'
     ];
     sortedByHighLow = 0;

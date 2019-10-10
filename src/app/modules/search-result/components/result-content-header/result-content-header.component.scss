@@ -1,12 +1,14 @@
 .result-quantity {
   display: flex;
   justify-content: space-between;
-  padding: 9px 30px 14px 182px;
+  padding: 5px 30px 14px 182px;
   background-color: #f8f8f8;
   transition: .7s;
   position: fixed;
   width: 100%;
-  margin-top: -10px;
+  margin-top: -7px;
+  z-index: 1;
+
 
   &.left-side {
     padding-left: 63px;
