@@ -1,0 +1,19 @@
+.details-header-top {
+  background-color: #0E4F6E;
+  padding: 2.5px 5px 2.5px 34px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-dialog-img {
+    max-width: 17px;
+  }
+
+  .preview-text {
+    align-self: center;
+    margin-left: 4px;
+  }
+}

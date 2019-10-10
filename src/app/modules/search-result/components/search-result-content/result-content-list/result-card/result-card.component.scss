@@ -17,14 +17,6 @@
   font-weight: 500;
   margin: 4px 0;
 
-
-  &:after {
-    content: '';
-    background-image: url("src/assets/icons/drop-down-arrow.svg");
-    width: 6px;
-    height: 4px;
-  }
-
   .card-type-title {
     margin-right: 3px;
     cursor: pointer;
@@ -36,6 +28,10 @@
       left: 100%;
       z-index: 5;
     }
+  }
+  .drop-down-white {
+    position: relative;
+    left: 6px;
   }
 }
 

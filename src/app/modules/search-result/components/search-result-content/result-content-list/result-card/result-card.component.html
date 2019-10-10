@@ -1,14 +1,19 @@
 <div class="container" id="test">
 	<div class="card-wrap pointer"
-		 *ngFor="let card of results">
+		 *ngFor="let card of results"
+		 [routerLink]="'/items/details/'+ card.id"
+		 routerLinkActive="active-details"
+	>
 		<h3 class="card-title">{{card.title}}</h3>
 		<div class="card-type d-flex flex-a-center"
 			 (click)="card.openCardTools = !card.openCardTools"
 			 (clickOutside)="card.openCardTools = false">
-			<div class="card-type-title">{{card.type}}
+			<div class="card-type-title d-flex flex-a-center">{{card.type}}
+				<img class="ml5" src="../../../../../../../assets/icons/drop-down-arrow.svg" alt="drop-down-arrow">
+				<img class="drop-down-white" src="../../../../../../../assets/icons/drop-down-white.svg" alt="drop-down-white">
 				<div class="card-type-more">
-				<app-card-drop-down *ngIf="card.openCardTools"></app-card-drop-down>
-			</div>
+					<app-card-drop-down *ngIf="card.openCardTools"></app-card-drop-down>
+				</div>
 			</div>
 		</div>
 		<div class="card-status-btn"

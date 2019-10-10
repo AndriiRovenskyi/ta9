@@ -39,15 +39,15 @@
 				<label
 					*ngIf="option!=='date'"
 					class="checkbox-wrap"
-					[class.is-checked]="option.isChecked || category.options[0].isChecked"
-					(click)="checkOption(option, category.options[0])">
+					[class.is-checked]="option.isChecked"
+					(click)="checkOption(option, category)">
 					<span class="checkmark"></span>
 					<span class="filter-type">{{option.checkName}}</span>
 				</label>
 			</div>
 		</div>
 	</div>
-	<div class="clear-advanced">
+	<div class="clear-advanced" (click)="clearAdvanced()">
 		Clear all
 	</div>
 </div>

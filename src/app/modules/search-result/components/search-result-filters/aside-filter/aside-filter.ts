@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {AllFiltersComponent} from '../../../../../../_shared/dialogs/all-filters/all-filters.component';
+import {AllFiltersComponent} from '../../../../../_shared/dialogs/all-filters/all-filters.component';
 import {MatDialog} from '@angular/material/dialog';
 
 @Component({
@@ -29,7 +29,7 @@ export class AsideFilterComponent implements OnInit {
 
     checkFilter(type, filter) {
         type.isChecked = !type.isChecked;
-        if (type.checkName === 'All' && type.isChecked === true) {
+        if (type.checkName === 'All' && type.isChecked) {
             filter.types.forEach(el => {
                 el.isChecked = true;
             });
@@ -48,7 +48,6 @@ export class AsideFilterComponent implements OnInit {
             width: 'auto',
             data: filters
         });
-
         dialogRef.afterClosed().subscribe(result => {
         });
     }

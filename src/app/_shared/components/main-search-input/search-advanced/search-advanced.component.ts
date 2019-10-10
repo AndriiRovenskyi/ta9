@@ -1,6 +1,4 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
-
 
 @Component({
     selector: 'app-search-advanced',
@@ -124,5 +122,13 @@ export class SearchAdvancedComponent implements OnInit {
                 el.isChecked = true;
             });
         }
+    }
+
+    clearAdvanced() {
+        this.categories.forEach(category => {
+            if (category.options.length > 1) category.options.forEach(option => {
+                option.isChecked = false;
+            });
+        });
     }
 }

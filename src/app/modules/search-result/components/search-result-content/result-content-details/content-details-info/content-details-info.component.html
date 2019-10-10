@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="d-flex flex-between">
+    <div class="info-type-column flex-column">
+      <div *ngFor="let type of detailsInfo" class="line-wrap d-flex">
+        <span class="title">{{type.type}}</span>
+        <span class="sub-title">{{type.description}}</span>
+      </div>
+    </div>
+    <div class="flex-column">
+      <div class="slider-wrap">
+        <div
+          *ngFor="let photo of photos"
+          class="slider-img"
+          [class.showPic]="photo.isActive"
+        >
+          <img [src]="photo.src" alt="">
+        </div>
+      </div>
+      <div class="slider-pagination">
+        <span
+          [class.active-slide]="photo.isActive"
+          class="pagination-circle pointer"
+          *ngFor="let photo of photos"
+          (click)="changePhoto(photo)"
+        ></span>
+      </div>
+    </div>
+  </div>
+</div>

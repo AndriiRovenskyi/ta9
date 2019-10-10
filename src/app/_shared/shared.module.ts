@@ -14,9 +14,9 @@ import {RouterModule} from '@angular/router';
 import {MatInputModule} from '@angular/material/input';
 import {SearchResultFooterComponent} from './components/footer/search-result-footer/search-result-footer.component';
 import {FormsModule} from '@angular/forms';
-import {AllFiltersComponent} from "./dialogs/all-filters/all-filters.component";
-import {MatRangeDatepickerModule, MatRangeNativeDateModule} from "mat-range-datepicker";
-import {MatDatepickerModule} from "@angular/material/datepicker";
+import {AllFiltersComponent} from './dialogs/all-filters/all-filters.component';
+import {MatRangeDatepickerModule, MatRangeNativeDateModule} from 'mat-range-datepicker';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 @NgModule({
@@ -55,7 +55,8 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
         MatRangeDatepickerModule,
         MatRangeNativeDateModule,
         MatDatepickerModule
-    ]
+    ],
+    entryComponents: [AllFiltersComponent]
 })
 export class SharedModule {
 }

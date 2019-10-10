@@ -30,9 +30,4 @@ export class MainSearchInputComponent implements OnInit {
     onClickedOutside() {
         this.openDropFiles = false;
     }
-
-    x(c) {
-        c
-        debugger;
-    }
 }
