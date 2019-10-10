@@ -123,72 +123,6 @@ export class SearchResultFiltersComponent implements OnInit {
                 '../../../../../../../assets/icons/sort-a-z-down.svg',
             ],
             sortedAlphabet: 0
-        },
-        {
-            name: 'Test1',
-            types: [
-                {checkName: 'Accurate Location', isChecked: false},
-                {checkName: 'ADINT', isChecked: false},
-                {checkName: 'OSINT', isChecked: false},
-                {checkName: 'Orange', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/sort-high-up.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
-        },
-        {
-            name: 'Test2',
-            types: [
-                {checkName: 'Accurate Location', isChecked: false},
-                {checkName: 'ADINT', isChecked: false},
-                {checkName: 'OSINT', isChecked: false},
-                {checkName: 'Orange', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/sort-high-up.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
-        },
-        {
-            name: 'Test3',
-            types: [
-                {checkName: 'Accurate Location', isChecked: false},
-                {checkName: 'ADINT', isChecked: false},
-                {checkName: 'OSINT', isChecked: false},
-                {checkName: 'Orange', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/sort-high-up.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
         }
     ];
     multimediaFilters = [
@@ -280,95 +214,7 @@ export class SearchResultFiltersComponent implements OnInit {
                 '../../../../../../../assets/icons/sort-a-z-down.svg',
             ],
             sortedAlphabet: 0
-        },
-        {
-            name: 'Data Source',
-            types: [
-                {checkName: 'Accurate Location', isChecked: false},
-                {checkName: 'ADINT', isChecked: false},
-                {checkName: 'OSINT', isChecked: false},
-                {checkName: 'Orange', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/sort-high-up.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
-        },
-        {
-            name: 'Data Source',
-            types: [
-                {checkName: 'Accurate Location', isChecked: false},
-                {checkName: 'ADINT', isChecked: false},
-                {checkName: 'OSINT', isChecked: false},
-                {checkName: 'Orange', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/sort-high-up.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
-        },
-        {
-            name: 'Data Source',
-            types: [
-                {checkName: 'Accurate Location', isChecked: false},
-                {checkName: 'ADINT', isChecked: false},
-                {checkName: 'OSINT', isChecked: false},
-                {checkName: 'Orange', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/sort-high-up.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
-        },
-        {
-            name: 'Data Source',
-            types: [
-                {checkName: 'Accurate Location', isChecked: false},
-                {checkName: 'ADINT', isChecked: false},
-                {checkName: 'OSINT', isChecked: false},
-                {checkName: 'Orange', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/sort-high-up.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
-        },
+        }
     ];
 
     constructor() {
@@ -379,6 +225,11 @@ export class SearchResultFiltersComponent implements OnInit {
 
     clearFilters() {
         this.commonFilters.forEach(filter => {
+            filter.types.forEach(type => {
+                type.isChecked = false;
+            });
+        });
+        this.multimediaFilters.forEach(filter => {
             filter.types.forEach(type => {
                 type.isChecked = false;
             });

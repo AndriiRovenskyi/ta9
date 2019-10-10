@@ -28,6 +28,7 @@ export class AllFiltersComponent implements OnInit {
 
     ngOnInit() {
         this.types = this.data;
+        this.amountSelected = this.data.filter(el => el.isChecked === true).length;
     }
 
     closeDialog(): void {
