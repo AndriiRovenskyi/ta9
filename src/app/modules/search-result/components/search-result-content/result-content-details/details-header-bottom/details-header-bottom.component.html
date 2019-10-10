@@ -13,8 +13,11 @@
 			</div>
 		</div>
 		<nav class="header-bottom-links flex-between flex-a-center ">
-			<li class="header-bottom-link d-flex flex-a-center ">
-				<img src="../../../../../../../assets/icons/details-header-favorites.svg" alt="favorites">
+			<li class="header-bottom-link d-flex flex-a-center" (click)="isMarked = !isMarked">
+				<img [hidden]="isMarked" src="../../../../../../../assets/icons/details-header-favorites.svg"
+					 alt="favorites">
+				<img [hidden]="!isMarked" src="../../../../../../../assets/icons/isMarked.svg"
+					 alt="favorites">
 				<span>Mark</span>
 			</li>
 			<li *ngFor="let link of headerLinks"

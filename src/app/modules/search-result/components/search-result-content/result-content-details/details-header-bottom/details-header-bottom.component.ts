@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class DetailsHeaderBottomComponent implements OnInit {
     @Input() cardDetail;
+    isMarked = false;
     headerLinks = [
         {linkName: 'Main Details', isActive: true},
         {linkName: 'Communication', isActive: false},

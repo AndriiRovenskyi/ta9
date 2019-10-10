@@ -11,8 +11,8 @@
 				(click)="openFilters()"
 				*ngIf="isSearchResult"
 				class="search-filters-button">
-				<img *ngIf="closeFilters" src="../../../../../assets/icons/search-filter-button.svg" alt="filters">
-				<img *ngIf="!closeFilters" src="../../../../assets/icons/filters-btn-active.svg" alt="filters-active">
+				<img [hidden]="closeFilters" src="../../../../../assets/icons/search-filter-button.svg" alt="filters">
+				<img [hidden]="!closeFilters" src="../../../../assets/icons/filters-btn-active.svg" alt="filters-active">
 			</div>
 			<div class="flex-column">
 				<div class="d-flex search-input">
