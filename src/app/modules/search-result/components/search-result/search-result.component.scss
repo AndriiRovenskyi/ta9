@@ -12,7 +12,7 @@
   background-color: #F8F8F8;
 
   &.active-advanced {
-    height: 50px;
+    height: 40px;
   }
 }
 
@@ -38,7 +38,7 @@
 .search-result-filters {
   transition: .7s;
   position: fixed;
-  z-index: 4;
+  z-index: 1;
   background-color: #F8F8F8;
 }
 

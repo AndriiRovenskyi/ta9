@@ -21,6 +21,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -43,6 +44,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -65,6 +67,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -87,6 +90,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -109,6 +113,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -130,28 +135,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
-                '../../../../../../../assets/icons/hi-lo-down.svg'
-            ],
-            sortedByHighLow: 0,
-            sortByAlphabet: [
-                '../../../../../../../assets/icons/a-z-off.svg',
-                '../../../../../../../assets/icons/z-a-up.svg',
-                '../../../../../../../assets/icons/sort-a-z-down.svg',
-            ],
-            sortedAlphabet: 0
-        },
-        {
-            name: 'test2',
-            types: [
-                {checkName: 'All', isChecked: false},
-                {checkName: 'English', isChecked: false},
-                {checkName: 'French', isChecked: false},
-                {checkName: 'German', isChecked: false},
-                {checkName: 'Arabic', isChecked: false}
-            ],
-            opened: true,
-            sortByHighLow: [
-                '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -175,6 +159,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -197,6 +182,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -218,6 +204,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
@@ -239,6 +226,7 @@ export class SearchResultFiltersComponent implements OnInit {
             opened: true,
             sortByHighLow: [
                 '../../../../../../../assets/icons/hi-lo-off.svg',
+                '../../../../../../../assets/icons/sort-high-up.svg',
                 '../../../../../../../assets/icons/hi-lo-down.svg'
             ],
             sortedByHighLow: 0,
