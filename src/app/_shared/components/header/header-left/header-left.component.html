@@ -1,21 +1,18 @@
 <div class="header-left d-flex">
-  <div class="menu-button"
-       (click)="activeMenu = !activeMenu"
-  >
-    <img src="../../../../assets/icons/menu.png" alt="menu-button"
-    >
-  </div>
-  <div class="logo">
-    <img src="../../../../assets/icons/logo.png" alt="logo-TA9">
-  </div>
-  <div class="federated-search">
-    <img src="../../../../assets/icons/star.png" alt="federated-search">
-    <span>Federated Search</span>
-  </div>
-</div>
-<div
-  class="navigation"
-  [ngClass]="{'menu-pos': activeMenu}"
->
-  <app-header-nav (openMenu)="activeMenu = !activeMenu"></app-header-nav>
+	<div class="menu-btn"
+		 (click)="activeMenu = !activeMenu">
+	</div>
+	<div class="logo d-flex flex-a-center">
+		<div class="logo-img"></div>
+		<span class="logo-title">TA9</span>
+	</div>
+	<div class="federated-search d-flex">
+		<div class="star"></div>
+		<span>Federated Search</span>
+	</div>
+	<div
+		class="navigation"
+		[ngClass]="{'menu-pos': activeMenu}">
+		<app-header-nav (openMenu)="activeMenu = !activeMenu"></app-header-nav>
+	</div>
 </div>

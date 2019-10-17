@@ -1,35 +1,36 @@
-<div class="nav-button"
-     (click)="activeMenu()"
->
-  <img src="../../../../../assets/icons/nav-button.png" alt="menu">
-</div>
-<div class="nav">
-  <div class="nav-container">
-    <div class="find">
-      <input type="text" placeholder="Find" class="find-field">
-    </div>
-    <nav class="navigation d-flex">
-      <div class="nav-link">
-        <img src="../../../../../assets/icons/nav-home.png" alt="home">
-      </div>
-      <div class="nav-link">
-        <img src="../../../../../assets/icons/nav-federated-search.png" alt="search">
-      </div>
-      <div class="nav-link">
-        <img src="../../../../../assets/icons/nav-link-analysis.png" alt="analysis">
-      </div>
-      <div class="nav-link">
-        <img src="../../../../../assets/icons/nav-map.png" alt="map">
-      </div>
-    </nav>
-    <div class="nav-favorites d-flex">
-      <div class="star">
-        <svg height="50" width="30">
-          <polygon points="100,10 40,198 190,78 10,78 160,198"
-                   style="fill:white;fill-rule:nonzero;"/>
-        </svg>
-      </div>
-      <span>Favorites</span>
-    </div>
-  </div>
+<div class="container">
+	<div class="nav-button"
+		 (click)="activeMenu()">
+		<div class="menu-btn-active"></div>
+	</div>
+	<div class="nav">
+		<div class="nav-container">
+			<div class="find">
+				<input type="text" placeholder="Find" class="find-field">
+			</div>
+			<nav class="navigation d-flex">
+				<div class="nav-link">
+					<img src="../../../../../assets/icons/nav-home.png" alt="home">
+				</div>
+				<div class="nav-link">
+					<img src="../../../../../assets/icons/nav-federated-search.png" alt="search">
+				</div>
+				<div class="nav-link">
+					<img src="../../../../../assets/icons/nav-link-analysis.png" alt="analysis">
+				</div>
+				<div class="nav-link">
+					<img src="../../../../../assets/icons/nav-map.png" alt="map">
+				</div>
+			</nav>
+			<div class="nav-favorites d-flex">
+				<div class="star">
+					<svg height="50" width="30">
+						<polygon points="100,10 40,198 190,78 10,78 160,198"
+								 style="fill:white;fill-rule:nonzero;"/>
+					</svg>
+				</div>
+				<span>Favorites</span>
+			</div>
+		</div>
+	</div>
 </div>
