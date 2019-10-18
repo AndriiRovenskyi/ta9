@@ -27,6 +27,7 @@ $ta9-theme: mat-light-theme($ta9-primary, $ta9-accent, $ta9-warn);
 @include angular-material-theme($ta9-theme);
 
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/styles/variables';
 @import 'assets/styles/fonts';
 @import 'assets/styles/reset';
 @import 'assets/styles/base';

@@ -3,7 +3,9 @@
 		class="search-filter"
 		[class.pb5]="filter.opened"
 		*ngFor="let filter of filters">
-		<header class="filter-header">
+		<header class="filter-header"
+				[class.bp5]="filter.opened"
+		>
 			<div class="d-flex flex-a-center" (click)="isFiltersOpened(filter)">
 				<img [class.rotate-down-arrow]="filter.opened" class="down-arrow"
 					 src="../../../../../../assets/icons/filter-down-arrow.svg" alt="drop-down">

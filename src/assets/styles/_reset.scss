@@ -73,3 +73,8 @@ input:focus {
 li {
   list-style: none;
 }
+
+input{
+  outline: none;
+}
+[hidden] { display: none !important;}
