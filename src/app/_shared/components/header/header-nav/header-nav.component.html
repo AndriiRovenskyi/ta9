@@ -1,36 +1,41 @@
 <div class="container">
 	<div class="nav-button"
 		 (click)="activeMenu()">
-		<div class="menu-btn-active"></div>
+		<div class="menu-btn-active">
+			<img src="../../../../../assets/icons/header-nav/menu-btn.svg" alt="menu-btn">
+		</div>
 	</div>
 	<div class="nav">
 		<div class="nav-container">
 			<div class="find">
-				<input type="text" placeholder="Find" class="find-field">
+				<input class="find-field" type="text" placeholder="Find">
 			</div>
-			<nav class="navigation d-flex">
-				<div class="nav-link">
-					<img src="../../../../../assets/icons/nav-home.png" alt="home">
+			<nav class="navigation">
+				<div
+					class="nav-link"
+					routerLink="/home">
+					<img class="nav-link-img" src="../../../../../assets/icons/header-nav/home.svg" alt="home">
+					<span class="nav-link-title">Home</span>
 				</div>
 				<div class="nav-link">
-					<img src="../../../../../assets/icons/nav-federated-search.png" alt="search">
+					<img class="nav-link-img" src="../../../../../assets/icons/header-nav/search.svg" alt="search">
+					<span class="nav-link-title">Federated Search</span>
 				</div>
 				<div class="nav-link">
-					<img src="../../../../../assets/icons/nav-link-analysis.png" alt="analysis">
+					<img class="nav-link-img" src="../../../../../assets/icons/header-nav/network.svg" alt="network">
+					<span class="nav-link-title">Link Analysis</span>
 				</div>
 				<div class="nav-link">
-					<img src="../../../../../assets/icons/nav-map.png" alt="map">
+					<img class="nav-link-img" src="../../../../../assets/icons/header-nav/earth.svg" alt="world">
+					<span class="nav-link-title">Map</span>
 				</div>
 			</nav>
-			<div class="nav-favorites d-flex">
-				<div class="star">
-					<svg height="50" width="30">
-						<polygon points="100,10 40,198 190,78 10,78 160,198"
-								 style="fill:white;fill-rule:nonzero;"/>
-					</svg>
-				</div>
-				<span>Favorites</span>
-			</div>
+			<header class="nav-favorites-header">
+				<img class="nav-favorites-star" src="../../../../../assets/icons/header-nav/favorites.svg"
+					 alt="favorites">
+				<span class="nav-favorites-title">Favorites</span>
+			</header>
+			<app-favorites-item></app-favorites-item>
 		</div>
 	</div>
 </div>

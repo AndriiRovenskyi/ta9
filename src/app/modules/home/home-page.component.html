@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="container">
+	<main class="home-page-wrap">
+		<div class="search-input">
+			<app-simple-search-input></app-simple-search-input>
+		</div>
+		<div class="breadcrumbs-title">
+			<a *ngFor="let breadcrumb of breadcrumbs; let i = index;"
+			   (click)="goTo(breadcrumb)">{{ breadcrumb }} {{ breadcrumbs.length - 1 === i ? '' : '/ ' }}</a>
+		</div>
+		<section *ngIf="!showItems"
+				 [@mainFoldersHide]
+				 class="main-folders">
+			<app-folder-item
+				[folders]="folders"
+				(openFolder)="openFolder($event)"
+			></app-folder-item>
+			<div class="favorites-items">
+				<app-show-folder [items]="items"></app-show-folder>
+			</div>
+		</section>
+		<section
+			*ngIf="showItems"
+			[@itemsShow]
+			class="items-section">
+			<app-show-folder
+				[showItems]="showItems"
+				[items]="items"
+				(openFolder)="openFolder($event)"></app-show-folder>
+		</section>
+	</main>
+</div>
+
+

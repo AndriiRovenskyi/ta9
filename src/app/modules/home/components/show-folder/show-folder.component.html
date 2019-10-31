@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="item-wrap"
+		 *ngFor="let item of items | paginate: { itemsPerPage: 24, currentPage: p }">
+		<div class="item-top"
+			 (click)="openFolder(item)"
+			 [ngStyle]="{'background-image': item.background ? 'url(' + item.background + ')' : '' , 'background-color': !item.background ? item.noneBackground:''}">
+			<div *ngIf="item.background" class="item-top-mask img-mask"></div>
+			<img class="item-top-icon"
+				 [src]="item.icon"
+				 *ngIf="item.type === 'item'"
+				 alt="icon">
+			<img class="folder-icon"
+				 *ngIf="item.type === 'folder'"
+				 src="../../../../../assets/icons/home-page/folder-icon.svg"
+				 alt="folder-icon">
+			<span *ngIf="item.type === 'item'"
+				  class="item-title">{{item.name}}</span>
+		</div>
+		<div class="item-bottom">
+			<h4 *ngIf="item.type === 'item'"
+				class="item-type">{{item.category}}</h4>
+			<h4 *ngIf="item.type === 'folder'"
+				class="item-type">{{item.name}}</h4>
+			<div class="isFavorite"
+				 (click)="isFavorite(item)">
+				<img [hidden]="item.isFavorite" src="../../../../../assets/icons/home-page/Favorite-off.svg"
+					 alt="isFavorites">
+				<img [hidden]="!item.isFavorite" src="../../../../../assets/icons/home-page/Favorite-on.svg"
+					 alt="Favorite-on">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pagination" *ngIf="showItems && items.length > 23">
+	<pagination-controls directionLinks="false" (pageChange)="p = $event"></pagination-controls>
+</div>
+<img src="" alt="">
+
+

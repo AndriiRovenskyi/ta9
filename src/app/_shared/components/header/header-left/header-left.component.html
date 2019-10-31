@@ -1,18 +1,18 @@
-<div class="header-left d-flex">
+<div class="header-left" (clickOutside)="this.activeMenu = false;">
 	<div class="menu-btn"
 		 (click)="activeMenu = !activeMenu">
+		<img src="../../../../../assets/icons/header-nav/menu-btn.svg" alt="menu-btn">
 	</div>
-	<div class="logo d-flex flex-a-center">
-		<div class="logo-img"></div>
-		<span class="logo-title">TA9</span>
-	</div>
-	<div class="federated-search d-flex">
-		<div class="star"></div>
-		<span>Federated Search</span>
+	<div class="logo"
+		 routerLink="/"
+	>
+		<img src="../../../../../assets/icons/header-nav/logo.svg" alt="logo">
 	</div>
 	<div
 		class="navigation"
 		[ngClass]="{'menu-pos': activeMenu}">
-		<app-header-nav (openMenu)="activeMenu = !activeMenu"></app-header-nav>
+		<app-header-nav
+			(openMenu)="activeMenu = !activeMenu"
+		></app-header-nav>
 	</div>
 </div>

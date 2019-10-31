@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.item-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 125px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 5px 30px #C6D5E1B3;
+  overflow: hidden;
+  margin: 42px 10px 0;
+  cursor: pointer;
+
+  .item-top {
+    height: 111px;
+    padding: 8px 0 10px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-size: cover;
+
+    .item-top-mask {
+      background-color: #6B98CC;
+      opacity: 0.7;
+      border-radius: 10px 10px 0 0;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    .item-top-icon {
+      max-width: 23px;
+      z-index: 3;
+    }
+
+    .item-title {
+      color: #FFFFFF;
+      font-size: 14px;
+      z-index: 2;
+    }
+
+    .folder-icon {
+      z-index: 3;
+      max-width: 47px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .item-bottom {
+    background-color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 8px 8px 10px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+}
+
+.pagination /deep/ .ngx-pagination .current {
+  background-color: #0E4F6E;
+}
+
+.pagination /deep/ .ngx-pagination a, .ngx-pagination button {
+  display: block;
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #0E4F6E;
+  position: relative;
+  bottom: 6px;
+  opacity: 0.3;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.pagination /deep/ .ngx-pagination li {
+  margin: 0 10px;
+}
+
+.pagination /deep/ .ngx-pagination .current {
+  background-color: #0E4F6E;
+  color: #fefefe;
+  cursor: default;
+  font-size: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  bottom: 6px;
+  padding: 0;
+}
+
+//.ngx-pagination a, .ngx-pagination button {
+//
+//}
+//
+//.pagination /deep/ .ngx-pagination .current {
+//  padding: 0;
+//  background: red !important;
+//}
+//
+//.pagination /deep/ .ngx-pagination .ng-star-inserted {
+//  width: 15px;
+//  height: 15px;
+//  background: #0E4F6E;
+//  border-radius: 50%;
+//  font-size: 0;
+//  opacity: 0.3;
+//  margin: 0 50px;
+//}
+//
+//.pagination /deep/ .ngx-pagination a {
+//  display: none;
+//}

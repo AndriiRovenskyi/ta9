@@ -17,6 +17,8 @@ import {FormsModule} from '@angular/forms';
 import {AllFiltersComponent} from './dialogs/all-filters/all-filters.component';
 import {MatRangeDatepickerModule, MatRangeNativeDateModule} from 'mat-range-datepicker';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {FavoritesItemComponent} from './components/header/header-nav/favorites-item/favorites-item.component';
+import {SimpleSearchInputComponent} from './components/simple-search-input/simple-search-input.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
         SearchDragFilesComponent,
         SearchResultFooterComponent,
         AllFiltersComponent,
+        FavoritesItemComponent,
+        SimpleSearchInputComponent,
     ],
     imports: [
         CommonModule,
@@ -54,7 +58,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
         SearchResultFooterComponent,
         MatRangeDatepickerModule,
         MatRangeNativeDateModule,
-        MatDatepickerModule
+        MatDatepickerModule,
+        SimpleSearchInputComponent
     ],
     entryComponents: [AllFiltersComponent]
 })

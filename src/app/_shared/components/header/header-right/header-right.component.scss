@@ -1,42 +1,122 @@
 .header-right {
-  padding-right: 50px;
+  padding-right: 40px;
+  align-items: center;
 
-  .notifications {
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+  .add-entity-tools {
+    .entity-tools-btn {
+      max-width: 30px;
+      cursor: pointer;
+    }
   }
 
-  .file-manager {
-    border-bottom: solid 1px grey;
+  .notifications {
+    border-left: 1px solid #D6D3D3;
+    border-right: 1px solid #D6D3D3;
+    margin: 0 26px;
+    padding: 5px 0;
+
+    .notifications-img {
+      margin: 0 26px;
+
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
   }
 
   .log-in-section {
     position: relative;
+    display: flex;
+    align-items: center;
+
+    .greeting {
+      font-size: 10px;
+      padding-left: 6px;
+      cursor: pointer;
+
+      .person-name {
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
   }
 
   .drop-down-content {
     position: absolute;
     z-index: 1;
-    background-color: aliceblue;
-    top: 50px;
+    top: 45px;
+    left: -15px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 10px #0000002B;
+    border-radius: 4px;
+    padding: 20px 14px 11px;
+    width: 144px;
 
-    .drop-down-arrow {
-      transform: rotate(55deg);
+    .clear-cache,
+    .file-manager {
+      padding-left: 2px;
+    }
+
+    .file-manager {
+
+      &:after {
+        content: '';
+        display: block;
+        background-color: #DFDFDF;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+      }
+    }
+
+
+    & div {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      cursor: pointer;
+
+
+      & span {
+        padding-left: 5px;
+        color: #696969;
+        font-size: 12px;
+      }
+    }
+
+    .sing-out {
+      padding: 13px 0 0 3px;
     }
   }
 
-  //.add-entity {
-  //  position: relative;
-  //}
 
   .add-entity-tools {
     position: relative;
 
     .add-entity-content {
       position: absolute;
-      min-width: 150px;
-      top: 4px;
-      left: -100px;
+      top: 47px;
+      left: 0;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 6px #00000033;
+      border-radius: 4px;
+      padding: 12px 0 0 12px;
+      width: 190px;
+
+      & div {
+        padding-bottom: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        & span {
+          padding-left: 10px;
+          font-size: 12px;
+          color: #696969;
+        }
+      }
     }
   }
 }

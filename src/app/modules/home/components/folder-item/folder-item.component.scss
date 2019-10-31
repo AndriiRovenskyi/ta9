@@ -1,0 +1,45 @@
+.folders {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  .folder-wrap {
+    width: 100%;
+    max-width: 215px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0 5px 30px #C6D5E1B3;
+
+    .folder-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+      background-size: cover;
+      position: relative;
+
+      .folder-top-mask {
+        opacity: 0.3;
+        border-radius: 10px 10px 0 0;
+        z-index: 2;
+        background-color: #000000;
+      }
+
+      .folder-top-icon {
+        z-index: 3;
+      }
+    }
+
+    .folder-bottom {
+      .folder-title {
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #FFFFFF;
+        padding: 14px 18px;
+      }
+    }
+  }
+}
+
+

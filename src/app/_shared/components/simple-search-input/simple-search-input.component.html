@@ -1,0 +1,14 @@
+<div class="d-flex search-input">
+	<input type="text" placeholder="Search here" [(ngModel)]="searchValue">
+	<div class="clear-input-text" *ngIf="searchValue" (click)="searchValue = ''">
+		<img src="../../../../assets/icons/close-btn.svg" alt="close-btn">
+	</div>
+	<button
+		class="search-btn"
+		routerLink="/results/items"
+	>
+		<img
+			class="search-img"
+			src="../../../../assets/icons/search-button.svg" alt="search">
+	</button>
+</div>

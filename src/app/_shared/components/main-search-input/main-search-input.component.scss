@@ -17,31 +17,7 @@
   }
 }
 
-.search-input {
-  transition: 0.7s;
-  width: 580px;
-  position: relative;
 
-  .clear-input-text {
-    height: 23px;
-    width: 23px;
-    position: absolute;
-    user-select: none;
-    cursor: pointer;
-    right: 53px;
-    top: 9px;
-  }
-
-  .search-btn {
-    border-radius: 0 4px 4px 0;
-    position: relative;
-
-    .search-img {
-      max-width: 23px;
-    }
-  }
-
-}
 
 
 .drag-files-section {

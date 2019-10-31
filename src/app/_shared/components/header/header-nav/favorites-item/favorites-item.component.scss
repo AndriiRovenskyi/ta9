@@ -1,0 +1,36 @@
+.nav-favorites-item {
+  width: 61px;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  margin: 11px;
+  cursor: pointer;
+
+  .favorites-item-top {
+    height: 51px;
+    background: red;
+  }
+
+  .favorites-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 8px;
+    padding: 5px 4px;
+    background-color: #FEFEFE;
+
+    .favorites-item-star {
+      max-width: 8px;
+    }
+  }
+}
+
+.nav-favorites-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -11px;
+  margin-top: 10px;
+
+}

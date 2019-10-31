@@ -1,28 +1,29 @@
+<app-header></app-header>
 <div class="search flex-column">
-  <div class="container">
-    <div class="search-wrapper">
-      <app-main-search-input (openAdvanced)="openAdvanced($event)"></app-main-search-input>
-      <div class="search-history"
-           [ngClass]="{'search-history-down': advanced, 'mt20': !advanced}"
-           *ngIf="historyLinks.length"
-      >
-        <div class="history-header d-flex">
-          <div class="history-title d-flex">
-            <img src="../../../../../assets/icons/search-history.svg" alt="search-history">
-            <span class="title">My search History</span>
-          </div>
-          <div class="clean-history">
-            <span (click)="historyLinks = []">Clean History</span>
-          </div>
-        </div>
-        <div class="history-links">
-          <app-history-chip [historyLinks]="historyLinks"></app-history-chip>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <app-footer></app-footer>
-  </div>
+	<div class="container">
+		<div class="search-wrapper">
+			<app-main-search-input (openAdvanced)="openAdvanced($event)"></app-main-search-input>
+			<div class="search-history"
+				 [ngClass]="{'search-history-down': advanced, 'mt20': !advanced}"
+				 *ngIf="historyLinks.length"
+			>
+				<div class="history-header d-flex">
+					<div class="history-title d-flex">
+						<img src="../../../../../assets/icons/search-history.svg" alt="search-history">
+						<span class="title">My search History</span>
+					</div>
+					<div class="clean-history">
+						<span (click)="historyLinks = []">Clean History</span>
+					</div>
+				</div>
+				<div class="history-links">
+					<app-history-chip [historyLinks]="historyLinks"></app-history-chip>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<app-footer></app-footer>
+	</div>
 </div>
 

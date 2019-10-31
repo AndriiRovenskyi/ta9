@@ -95,7 +95,7 @@ export class SearchCardService {
 
     getCard(id) {
         return this.searchResult.filter(res => {
-            return res.id == id;
+            return res.id === id;
         });
     }
 

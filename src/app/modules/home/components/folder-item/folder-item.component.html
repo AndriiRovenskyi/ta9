@@ -1,0 +1,20 @@
+<div class="container">
+	<section class="folders">
+		<div class="folder-wrap"
+			 (click)="openFolder(folder)"
+			 *ngFor="let folder of folders">
+			<div class="folder-top"
+				 [ngStyle]="{ 'background-image': 'url(' + folder.background + ')'}"
+			>
+				<div class="folder-top-mask img-mask"></div>
+				<img class="folder-top-icon" [src]="folder.icon" alt="folder-icon">
+			</div>
+			<div class="folder-bottom">
+				<h3 class="folder-title">
+					{{folder.category}}
+				</h3>
+			</div>
+		</div>
+	</section>
+</div>
+

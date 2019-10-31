@@ -1,21 +1,23 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-header-nav',
-  templateUrl: './header-nav.component.html',
-  styleUrls: ['./header-nav.component.scss']
+    selector: 'app-header-nav',
+    templateUrl: './header-nav.component.html',
+    styleUrls: ['./header-nav.component.scss']
 })
 export class HeaderNavComponent implements OnInit {
-  @Output() openMenu = new EventEmitter<boolean>();
+    @Output() openMenu = new EventEmitter<boolean>();
 
-  constructor() {
-  }
 
-  ngOnInit() {
-  }
+    constructor() {
 
-  activeMenu() {
-    this.openMenu.emit();
-  }
+    }
+
+    ngOnInit() {
+    }
+
+    activeMenu() {
+        this.openMenu.emit();
+    }
 
 }
